@@ -184,12 +184,3 @@ On **11 June 2020**, Kalibalau River overflowed, causing urban flooding. This sy
 ## 📬 Contact & Credits
 
 Developed by **Kelompok 6** – Institut Teknologi Sumatera
-
-* Shula Talitha Ardhya Putri
-* Esteria Rohanauli Sidauruk
-* Hermawan Manurung
-* Gymnastiar Al Khoarizmy
-
-Feel free to fork, contribute, or use this project as a portfolio reference.
-
-> Licensed under MIT License.
