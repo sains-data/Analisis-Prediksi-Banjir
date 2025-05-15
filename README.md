@@ -2,7 +2,7 @@
 
 Welcome to the **Flood Risk Prediction System** repository! This project is a comprehensive implementation of a **Big Data architecture** leveraging the **Apache Hadoop ecosystem** to perform **real-time and batch flood risk analytics** using multi-source data from **BMKG, BNPB, DEMNAS, and IoT sensors**.
 
-> Gymnastiar Al Khoarizmy (122450096), Hermawan Manurung (122450069), Shula Talitha Ardhya Putri (121450087), Esteria Rohanauli Sidauruk (122450025)
+> Gymnastiar Al Khoarizmy (122450096), Hermawan Manurung (122450069), Esteria Rohanauli Sidauruk (122450025), Shula Talitha Ardhya Putri (121450087)
 
 ---
 
