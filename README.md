@@ -16,7 +16,7 @@ We adopt a **multi-layered architecture** and hybrid processing approach:
 | **Raw Data Layer**   | Stores raw data from all sources    | Kafka, Flume, HDFS            | CSV, JSON, GeoTIFF |
 | **Processing Layer** | ETL, transformation, model training | Spark, Spark Streaming, MLlib | Parquet, Avro      |
 | **Serving Layer**    | Ready-to-query structured data      | Hive, HBase                   | ORC, Parquet       |
-| **Analytics Layer**  | Visual dashboards and early alerts  | Superset, Kafka               | -                  |
+| **Analytics Layer**  | Visual dashboards and early alerts  | Superset, Kafka               |  -                  |
 
 ---
 
