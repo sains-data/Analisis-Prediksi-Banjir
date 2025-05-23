@@ -1,0 +1,154 @@
+tanggal,lokasi,tinggi_air_cm,area_terdampak_ha,durasi_jam,jumlah_pengungsi
+2015-01-31,Bandar Lampung,31,1.9,3,0
+2015-02-25,Pringsewu,31,7.8,4,0
+2015-03-03,Metro,29,3.2,2,0
+2015-03-04,Lampung Barat,175,968.0,40,12635
+2015-03-31,Way Kanan,33,13.0,3,0
+2015-04-04,Lampung Selatan,21,9.6,2,0
+2015-04-14,Tulang Bawang Barat,24,5.8,2,0
+2015-04-18,Lampung Barat,37,7.9,2,0
+2015-04-23,Mesuji,16,2.7,5,0
+2015-10-01,Lampung Selatan,10,5.3,4,0
+2015-10-10,Tulang Bawang,20,6.8,2,0
+2015-10-20,Mesuji,36,6.5,5,0
+2015-11-03,Lampung Utara,108,26.1,18,141
+2015-11-04,Mesuji,93,16.6,5,21
+2015-11-18,Lampung Utara,10,10.3,4,0
+2015-11-23,Tanggamus,33,2.1,5,0
+2015-12-24,Tulang Bawang,299,613.0,53,13060
+2015-12-26,Way Kanan,11,8.3,2,0
+2015-12-28,Metro,151,901.4,63,10399
+2015-12-30,Lampung Selatan,125,226.8,65,1044
+2016-01-19,Pesawaran,23,10.5,4,0
+2016-01-20,Pesisir Barat,23,12.5,2,0
+2016-01-30,Lampung Tengah,184,267.3,45,2641
+2016-02-10,Bandar Lampung,20,14.1,4,0
+2016-02-17,Mesuji,242,857.1,70,16087
+2016-02-19,Pesisir Barat,95,71.8,7,484
+2016-03-23,Tulang Bawang,32,4.5,3,0
+2016-04-02,Mesuji,19,12.0,2,0
+2016-04-04,Pesisir Barat,14,13.2,5,0
+2016-04-13,Lampung Selatan,11,2.6,4,0
+2016-04-15,Lampung Timur,14,4.6,5,0
+2016-04-21,Tanggamus,37,1.9,4,0
+2016-04-25,Bandar Lampung,15,3.7,4,0
+2016-11-02,Tanggamus,91,57.5,19,81
+2016-12-06,Bandar Lampung,91,73.4,20,254
+2016-12-14,Pesawaran,35,12.0,4,0
+2016-12-15,Pesisir Barat,35,5.7,2,0
+2017-01-05,Bandar Lampung,17,13.0,5,0
+2017-02-02,Tulang Bawang Barat,107,73.3,5,579
+2017-02-12,Pesawaran,22,14.9,3,0
+2017-02-25,Lampung Utara,38,9.0,5,0
+2017-03-19,Tulang Bawang Barat,16,2.4,2,0
+2017-04-04,Way Kanan,20,8.4,5,0
+2017-04-09,Lampung Tengah,11,5.9,2,0
+2017-04-13,Pesawaran,25,7.4,5,0
+2017-04-23,Lampung Selatan,40,10.3,4,0
+2017-10-16,Way Kanan,31,10.7,3,0
+2017-10-23,Lampung Utara,15,3.9,4,0
+2017-11-08,Mesuji,43,53.5,15,0
+2017-12-03,Lampung Barat,18,5.0,2,0
+2017-12-08,Mesuji,127,838.0,53,3858
+2017-12-24,Pesawaran,13,12.0,2,0
+2018-01-23,Pesawaran,22,5.3,4,0
+2018-02-14,Bandar Lampung,52,26.9,20,32
+2018-02-17,Lampung Selatan,30,5.1,5,1
+2018-03-08,Mesuji,96,18.9,10,23
+2018-03-12,Tanggamus,20,5.3,4,0
+2018-10-30,Lampung Selatan,18,8.6,4,0
+2018-11-08,Tulang Bawang,214,258.5,45,2041
+2018-11-23,Tulang Bawang,28,6.3,5,2
+2018-12-10,Way Kanan,36,14.1,3,0
+2018-12-16,Lampung Timur,11,4.4,4,0
+2018-12-18,Mesuji,240,700.7,32,8977
+2019-01-03,Pesawaran,111,44.4,11,133
+2019-01-12,Lampung Barat,35,14.9,2,0
+2019-01-18,Pesawaran,16,15.0,3,0
+2019-02-04,Pringsewu,31,6.5,5,0
+2019-02-14,Lampung Timur,34,5.2,5,0
+2019-10-12,Lampung Timur,32,7.2,4,0
+2019-11-07,Metro,12,14.0,5,0
+2019-11-11,Lampung Timur,18,5.0,4,0
+2019-12-10,Lampung Tengah,20,13.3,4,0
+2019-12-19,Tulang Bawang Barat,219,433.6,72,5039
+2019-12-24,Lampung Selatan,23,3.1,4,0
+2020-01-04,Way Kanan,137,601.1,54,2861
+2020-02-03,Way Kanan,64,20.0,19,85
+2020-03-22,Lampung Barat,56,72.6,11,112
+2020-03-29,Pesisir Barat,31,12.9,3,0
+2020-04-01,Tulang Bawang,17,3.3,2,0
+2020-04-06,Lampung Barat,14,13.3,5,0
+2020-04-17,Tulang Bawang Barat,23,1.1,2,0
+2020-04-27,Pesawaran,78,51.1,10,88
+2020-10-04,Lampung Selatan,163,593.3,20,3363
+2020-10-16,Bandar Lampung,43,36.3,8,68
+2020-11-13,Tulang Bawang Barat,22,3.2,2,0
+2020-11-22,Mesuji,22,12.6,5,0
+2020-11-30,Bandar Lampung,36,13.8,5,0
+2020-12-06,Lampung Utara,13,3.2,5,0
+2020-12-18,Lampung Selatan,195,495.3,29,6518
+2020-12-31,Metro,24,8.0,3,0
+2021-01-23,Pesisir Barat,34,5.4,3,0
+2021-01-28,Way Kanan,279,980.7,27,27155
+2021-03-06,Lampung Utara,89,56.6,16,116
+2021-03-11,Tanggamus,34,9.2,5,5
+2021-03-13,Tulang Bawang Barat,14,2.3,2,0
+2021-03-21,Lampung Utara,29,13.3,4,0
+2021-10-17,Lampung Utara,120,38.8,14,107
+2021-10-18,Mesuji,40,12.6,5,11
+2021-10-25,Way Kanan,119,18.2,15,35
+2021-10-26,Bandar Lampung,40,9.3,4,0
+2021-11-11,Metro,33,4.5,2,0
+2021-11-20,Pringsewu,19,7.0,3,0
+2021-11-24,Way Kanan,19,2.6,4,0
+2021-11-26,Metro,282,288.6,38,3664
+2022-01-07,Tulang Bawang Barat,12,3.0,3,0
+2022-02-08,Bandar Lampung,64,17.9,18,14
+2022-02-18,Pringsewu,12,9.2,2,0
+2022-03-10,Bandar Lampung,40,1.4,4,0
+2022-04-01,Mesuji,42,19.7,20,40
+2022-04-07,Tulang Bawang Barat,62,16.6,14,58
+2022-04-20,Tanggamus,74,43.4,19,170
+2022-05-20,Tanggamus,14,9.9,4,0
+2022-10-16,Pringsewu,182,967.7,31,11240
+2022-11-05,Bandar Lampung,84,17.6,10,99
+2022-11-06,Metro,40,1.2,4,0
+2022-11-13,Pesawaran,117,46.3,15,122
+2023-01-05,Metro,10,7.2,4,0
+2023-01-15,Tanggamus,16,9.6,3,0
+2023-01-20,Metro,165,538.3,29,5382
+2023-01-22,Lampung Selatan,20,13.4,2,0
+2023-03-15,Pringsewu,38,2.1,2,0
+2023-03-24,Lampung Tengah,20,4.9,3,0
+2023-04-06,Lampung Barat,37,1.6,2,0
+2023-04-09,Lampung Timur,95,44.6,17,294
+2023-04-13,Pesisir Barat,10,10.0,4,0
+2023-10-03,Lampung Barat,102,62.9,13,179
+2023-10-09,Pesawaran,28,6.1,3,0
+2023-10-19,Lampung Selatan,12,7.3,4,0
+2023-10-25,Pesisir Barat,39,4.6,3,0
+2023-11-11,Tanggamus,36,11.3,5,0
+2023-11-14,Way Kanan,92,16.8,7,32
+2023-11-17,Lampung Barat,14,1.3,5,0
+2023-12-06,Lampung Utara,17,1.1,4,0
+2023-12-20,Lampung Timur,19,8.6,5,0
+2024-01-11,Tulang Bawang,32,14.4,3,0
+2024-02-17,Lampung Tengah,114,72.3,6,538
+2024-02-24,Tanggamus,253,633.4,34,13270
+2024-02-25,Tulang Bawang,27,12.3,3,0
+2024-03-01,Lampung Barat,201,875.0,64,12939
+2024-03-08,Pesisir Barat,75,55.8,12,68
+2024-03-09,Pringsewu,34,2.1,5,0
+2024-04-07,Pesisir Barat,20,4.1,4,0
+2024-04-18,Lampung Timur,29,1.4,2,0
+2024-04-24,Tanggamus,71,67.3,18,261
+2024-09-16,Lampung Utara,29,4.7,4,0
+2024-10-12,Lampung Barat,97,41.0,16,67
+2024-10-22,Tulang Bawang,93,24.3,12,56
+2024-10-27,Lampung Barat,25,4.0,5,0
+2024-11-06,Tulang Bawang,30,6.3,3,0
+2024-12-04,Pringsewu,15,3.7,3,0
+2024-12-21,Tulang Bawang,21,4.2,3,0
+2024-12-29,Lampung Timur,32,7.3,3,0
+2025-01-03,Pringsewu,175,355.2,44,4530
