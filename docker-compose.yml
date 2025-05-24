@@ -1,0 +1,148 @@
+version: '3'
+
+services:
+  namenode:
+    build:
+      context: .
+      dockerfile: /docker/hadoop/Dockerfile.namenode
+    container_name: namenode
+    restart: always
+    ports:
+      - "9870:9870"
+      - "8020:8020"
+    volumes:
+      - ./packages:/packages
+      - hadoop_namenode:/hadoop/dfs/name
+    environment:
+      - CLUSTER_NAME=flood-prediction-cluster
+    networks:
+      - hadoop_network
+
+  datanode:
+    build:
+      context: .
+      dockerfile: /docker/hadoop/Dockerfile.datanode
+    container_name: datanode
+    restart: always
+    volumes:
+      - ./packages:/packages
+      - hadoop_datanode:/hadoop/dfs/data
+    environment:
+      - SERVICE_PRECONDITION=namenode:9870
+    networks:
+      - hadoop_network
+    depends_on:
+      - namenode
+
+  resourcemanager:
+    build:
+      context: .
+      dockerfile: /docker/hadoop/Dockerfile.resourcemanager
+    container_name: resourcemanager
+    restart: always
+    ports:
+      - "8088:8088"
+    volumes:
+      - ./packages:/packages
+    environment:
+      - SERVICE_PRECONDITION=namenode:9870
+    networks:
+      - hadoop_network
+    depends_on:
+      - namenode
+
+  zookeeper:
+    build:
+      context: .
+      dockerfile: docker/zookeeper/Dockerfile
+    container_name: zookeeper
+    ports:
+      - "2181:2181"
+    volumes:
+      - ./packages:/packages
+      - zookeeper_data:/data
+      - zookeeper_datalog:/datalog
+    environment:
+      - ZOO_MY_ID=1
+      - ZOO_PORT=2181
+    networks:
+      - hadoop_network
+
+  hbase-master:
+    build:
+      context: .
+      dockerfile: docker/hbase/Dockerfile.master
+    container_name: hbase-master
+    ports:
+      - "16000:16000"
+      - "16010:16010"
+    volumes:
+      - ./packages:/packages
+    environment:
+      - HBASE_CONF_hbase_rootdir=hdfs://namenode:8020/hbase
+      - HBASE_CONF_hbase_zookeeper_quorum=zookeeper
+    networks:
+      - hadoop_network
+    depends_on:
+      - namenode
+      - zookeeper
+
+  hive-server:
+    build:
+      context: .
+      dockerfile: docker/hive/Dockerfile
+    container_name: hive-server
+    restart: always
+    ports:
+      - "10000:10000"
+      - "10002:10002"
+    volumes:
+      - ./packages:/packages
+    environment:
+      - SERVICE_PRECONDITION=namenode:9870
+    networks:
+      - hadoop_network
+    depends_on:
+      - namenode
+      - zookeeper
+
+  spark-master:
+    build:
+      context: .
+      dockerfile: docker/spark/Dockerfile.master
+    container_name: spark-master
+    restart: always
+    ports:
+      - "8080:8080"
+      - "7077:7077"
+    volumes:
+      - ./packages:/packages
+    networks:
+      - hadoop_network
+    depends_on:
+      - namenode
+
+  spark-worker:
+    build:
+      context: .
+      dockerfile: docker/spark/Dockerfile.worker
+    container_name: spark-worker
+    restart: always
+    volumes:
+      - ./packages:/packages
+    environment:
+      - SPARK_MASTER=spark://spark-master:7077
+    networks:
+      - hadoop_network
+    depends_on:
+      - spark-master
+
+networks:
+  hadoop_network:
+    driver: bridge
+
+volumes:
+  hadoop_namenode:
+  hadoop_datanode:
+  zookeeper_data:
+  zookeeper_datalog:

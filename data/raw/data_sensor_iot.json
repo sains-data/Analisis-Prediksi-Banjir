@@ -1,0 +1,252 @@
+[
+  {
+    "sensor_id": "LMP-MTRP-001",
+    "timestamp": "2025-05-23T19:12:58.0574718+07:00",
+    "location": "Metro Pusat (Kota Metro)",
+    "water_level": 0.2,
+    "flow_rate": 1.05,
+    "temperature": 30.6,
+    "humidity": 72,
+    "battery": 87
+  },
+  {
+    "sensor_id": "LMP-BWSK-002",
+    "timestamp": "2025-05-23T09:12:58.0629232+07:00",
+    "location": "Bendungan Way Sekampung",
+    "water_level": 1.73,
+    "flow_rate": 19.32,
+    "temperature": 32.3,
+    "humidity": 93,
+    "battery": 44
+  },
+  {
+    "sensor_id": "LMP-PDHP-003",
+    "timestamp": "2025-05-23T03:12:58.0629232+07:00",
+    "location": "Punduh Pidada (Pesawaran)",
+    "water_level": 1.27,
+    "flow_rate": 8.95,
+    "temperature": 26.2,
+    "humidity": 70,
+    "battery": 37
+  },
+  {
+    "sensor_id": "LMP-NTAR-004",
+    "timestamp": "2025-05-23T18:12:58.0629232+07:00",
+    "location": "Natar (Lampung Selatan)",
+    "water_level": 0.18,
+    "flow_rate": 1.11,
+    "temperature": 31.8,
+    "humidity": 89,
+    "battery": 98
+  },
+  {
+    "sensor_id": "LMP-SKBL-005",
+    "timestamp": "2025-05-22T22:12:58.0629232+07:00",
+    "location": "Sungai Kali Balau (Bandar Lampung)",
+    "water_level": 4.12,
+    "flow_rate": 31.51,
+    "temperature": 25.5,
+    "humidity": 86,
+    "battery": 42
+  },
+  {
+    "sensor_id": "LMP-TRNN-006",
+    "timestamp": "2025-05-23T18:12:58.0629232+07:00",
+    "location": "Terusan Nunyai (Lampung Tengah)",
+    "water_level": 0.47,
+    "flow_rate": 7.37,
+    "temperature": 29.2,
+    "humidity": 71,
+    "battery": 24
+  },
+  {
+    "sensor_id": "LMP-BWSK-007",
+    "timestamp": "2025-05-23T05:12:58.0629232+07:00",
+    "location": "Bendungan Way Sekampung",
+    "water_level": 1.16,
+    "flow_rate": 16.23,
+    "temperature": 28.0,
+    "humidity": 86,
+    "battery": 17
+  },
+  {
+    "sensor_id": "LMP-MTRP-008",
+    "timestamp": "2025-05-23T12:12:58.0629232+07:00",
+    "location": "Metro Pusat (Kota Metro)",
+    "water_level": 0.58,
+    "flow_rate": 3.79,
+    "temperature": 28.0,
+    "humidity": 75,
+    "battery": 26
+  },
+  {
+    "sensor_id": "LMP-SWSK-009",
+    "timestamp": "2025-05-23T06:12:58.0629232+07:00",
+    "location": "Sungai Way Sekampung",
+    "water_level": 2.69,
+    "flow_rate": 40.57,
+    "temperature": 26.6,
+    "humidity": 90,
+    "battery": 75
+  },
+  {
+    "sensor_id": "LMP-WYSD-010",
+    "timestamp": "2025-05-23T18:12:58.0639568+07:00",
+    "location": "Way Serdang (Mesuji)",
+    "water_level": 0.05,
+    "flow_rate": 0.16,
+    "temperature": 31.6,
+    "humidity": 67,
+    "battery": 46
+  },
+  {
+    "sensor_id": "LMP-BWSK-011",
+    "timestamp": "2025-05-22T22:12:58.0639568+07:00",
+    "location": "Bendungan Way Sekampung",
+    "water_level": 4.5,
+    "flow_rate": 77.91,
+    "temperature": 28.1,
+    "humidity": 80,
+    "battery": 16
+  },
+  {
+    "sensor_id": "LMP-RBJB-012",
+    "timestamp": "2025-05-23T12:12:58.0639568+07:00",
+    "location": "Rajabasa (Bandar Lampung)",
+    "water_level": 1.99,
+    "flow_rate": 26.44,
+    "temperature": 26.1,
+    "humidity": 95,
+    "battery": 17
+  },
+  {
+    "sensor_id": "LMP-WYSD-013",
+    "timestamp": "2025-05-22T23:12:58.0639568+07:00",
+    "location": "Way Serdang (Mesuji)",
+    "water_level": 0.17,
+    "flow_rate": 2.64,
+    "temperature": 28.0,
+    "humidity": 87,
+    "battery": 35
+  },
+  {
+    "sensor_id": "LMP-SDML-014",
+    "timestamp": "2025-05-23T14:12:58.0645263+07:00",
+    "location": "Sidomulyo (Lampung Selatan)",
+    "water_level": 0.12,
+    "flow_rate": 1.21,
+    "temperature": 24.4,
+    "humidity": 86,
+    "battery": 85
+  },
+  {
+    "sensor_id": "LMP-NTAR-015",
+    "timestamp": "2025-05-23T03:12:58.0645263+07:00",
+    "location": "Natar (Lampung Selatan)",
+    "water_level": 0.19,
+    "flow_rate": 1.66,
+    "temperature": 28.4,
+    "humidity": 74,
+    "battery": 55
+  },
+  {
+    "sensor_id": "LMP-NTAR-016",
+    "timestamp": "2025-05-23T14:12:58.0645263+07:00",
+    "location": "Natar (Lampung Selatan)",
+    "water_level": 0.12,
+    "flow_rate": 1.97,
+    "temperature": 26.0,
+    "humidity": 81,
+    "battery": 58
+  },
+  {
+    "sensor_id": "LMP-NTAR-017",
+    "timestamp": "2025-05-22T23:12:58.0645263+07:00",
+    "location": "Natar (Lampung Selatan)",
+    "water_level": 0.77,
+    "flow_rate": 10.68,
+    "temperature": 29.1,
+    "humidity": 88,
+    "battery": 38
+  },
+  {
+    "sensor_id": "LMP-KBTB-018",
+    "timestamp": "2025-05-23T19:12:58.0645263+07:00",
+    "location": "Kebun Tebu (Lampung Barat)",
+    "water_level": 1.19,
+    "flow_rate": 16.23,
+    "temperature": 24.6,
+    "humidity": 83,
+    "battery": 20
+  },
+  {
+    "sensor_id": "LMP-SWSM-019",
+    "timestamp": "2025-05-23T09:12:58.0645263+07:00",
+    "location": "Sungai Way Semaka",
+    "water_level": 2.4,
+    "flow_rate": 18.46,
+    "temperature": 24.3,
+    "humidity": 89,
+    "battery": 83
+  },
+  {
+    "sensor_id": "LMP-SWSP-020",
+    "timestamp": "2025-05-23T06:12:58.0645263+07:00",
+    "location": "Sungai Way Seputih",
+    "water_level": 1.89,
+    "flow_rate": 26.93,
+    "temperature": 28.9,
+    "humidity": 94,
+    "battery": 58
+  },
+  {
+    "sensor_id": "LMP-KTBM-021",
+    "timestamp": "2025-05-23T02:12:58.0645263+07:00",
+    "location": "Kotabumi (Lampung Utara)",
+    "water_level": 0.13,
+    "flow_rate": 0.99,
+    "temperature": 30.7,
+    "humidity": 88,
+    "battery": 44
+  },
+  {
+    "sensor_id": "LMP-WYHL-022",
+    "timestamp": "2025-05-23T12:12:58.0645263+07:00",
+    "location": "Way Halim (Bandar Lampung)",
+    "water_level": 0.13,
+    "flow_rate": 2.01,
+    "temperature": 31.6,
+    "humidity": 69,
+    "battery": 24
+  },
+  {
+    "sensor_id": "LMP-SWSP-023",
+    "timestamp": "2025-05-23T19:12:58.0645263+07:00",
+    "location": "Sungai Way Seputih",
+    "water_level": 2.38,
+    "flow_rate": 40.48,
+    "temperature": 28.2,
+    "humidity": 92,
+    "battery": 71
+  },
+  {
+    "sensor_id": "LMP-SDML-024",
+    "timestamp": "2025-05-23T02:12:58.0645263+07:00",
+    "location": "Sidomulyo (Lampung Selatan)",
+    "water_level": 0.21,
+    "flow_rate": 2.34,
+    "temperature": 25.9,
+    "humidity": 89,
+    "battery": 100
+  },
+  {
+    "sensor_id": "LMP-SWAB-025",
+    "timestamp": "2025-05-23T11:12:58.0655301+07:00",
+    "location": "Sungai Way Abung",
+    "water_level": 1.27,
+    "flow_rate": 14.03,
+    "temperature": 26.4,
+    "humidity": 92,
+    "battery": 70
+  }
+]
