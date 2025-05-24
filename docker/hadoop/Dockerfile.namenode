@@ -32,7 +32,7 @@ COPY docker/hadoop/config/mapred-site.xml ${HADOOP_CONF_DIR}/
 COPY docker/hadoop/config/hadoop-env.sh ${HADOOP_CONF_DIR}/
 
 # Set up entrypoint script
-COPY scripts/entrypoint-namenode.sh /entrypoint.sh
+COPY docker/hadoop/scripts/entrypoint-namenode.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
 # Create directories for HDFS
