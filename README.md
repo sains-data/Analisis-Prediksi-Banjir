@@ -3,7 +3,18 @@
 Welcome to the **Flood Prediction Big Data Project** repository! 🚀
 This project showcases the integration of **multi-source flood data** using a full-fledged **Apache Hadoop Ecosystem**. The system is designed to support **real-time and batch processing** for flood prediction in **Lampung Province**, Indonesia.
 
+> **Team Members:**  
 > Gymnastiar Al Khoarizmy (122450096) | Hermawan Manurung (122450069) | Shula Talitha A P (121450087) | Esteria Rohanauli Sidauruk (122450025)
+
+## 🎯 Project Status: **PRODUCTION READY** ✅
+
+**Recent Updates (May 2025):**
+- ✅ **Fixed ResourceManager restart loop issue** - YARN cluster now stable
+- ✅ **Resolved HBase RegionServer standalone mode** - Full distributed configuration
+- ✅ **Enhanced service startup dependencies** - Sequential startup prevents conflicts  
+- ✅ **All web UIs accessible** - Complete monitoring and management interfaces
+- ✅ **Production-grade Docker environment** - Ready for analytics workloads
+
 ---
 
 ## 🧱 System Architecture
