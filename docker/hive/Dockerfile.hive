@@ -1,0 +1,15 @@
+FROM apache/hive:4.0.1
+
+# Download and install PostgreSQL JDBC driver
+USER root
+RUN wget -q https://jdbc.postgresql.org/download/postgresql-42.7.4.jar -O /opt/hive/lib/postgresql-jdbc.jar
+
+# Set proper permissions
+RUN chown hive:hive /opt/hive/lib/postgresql-jdbc.jar
+
+# Switch back to hive user
+USER hive
+
+# Set environment variables
+ENV HIVE_HOME=/opt/hive
+ENV PATH=$HIVE_HOME/bin:$PATH

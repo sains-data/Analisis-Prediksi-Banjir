@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<configuration>
+    <!-- YARN ResourceManager Configuration -->
+    <property>
+        <name>yarn.resourcemanager.hostname</name>
+        <value>resourcemanager</value>
+        <description>The hostname of the ResourceManager</description>
+    </property>
+    
+    <property>
+        <name>yarn.resourcemanager.address</name>
+        <value>resourcemanager:8032</value>
+        <description>The address of the ResourceManager</description>
+    </property>
+    
+    <property>
+        <name>yarn.resourcemanager.scheduler.address</name>
+        <value>resourcemanager:8030</value>
+        <description>The address of the scheduler interface</description>
+    </property>
+    
+    <property>
+        <name>yarn.resourcemanager.resource-tracker.address</name>
+        <value>resourcemanager:8031</value>
+        <description>The address of the RM resource tracker interface</description>
+    </property>
+    
+    <property>
+        <name>yarn.resourcemanager.admin.address</name>
+        <value>resourcemanager:8033</value>
+        <description>The address of the RM admin interface</description>
+    </property>
+    
+    <property>
+        <name>yarn.resourcemanager.webapp.address</name>
+        <value>resourcemanager:8088</value>
+        <description>The address of the RM web application</description>
+    </property>
+    
+    <!-- YARN NodeManager Configuration -->
+    <property>
+        <name>yarn.nodemanager.resource.memory-mb</name>
+        <value>2048</value>
+        <description>Amount of physical memory, in MB, that can be allocated for containers</description>
+    </property>
+    
+    <property>
+        <name>yarn.nodemanager.resource.cpu-vcores</name>
+        <value>2</value>
+        <description>Number of vcores that can be allocated for containers</description>
+    </property>
+    
+    <property>
+        <name>yarn.nodemanager.aux-services</name>
+        <value>mapreduce_shuffle</value>
+        <description>The auxiliary services of NodeManager</description>
+    </property>
+    
+    <property>
+        <name>yarn.nodemanager.aux-services.mapreduce_shuffle.class</name>
+        <value>org.apache.hadoop.mapred.ShuffleHandler</value>
+        <description>The class to use as the shuffle service</description>
+    </property>
+    
+    <property>
+        <name>yarn.nodemanager.local-dirs</name>
+        <value>/opt/hadoop/logs/nm-local-dir</value>
+        <description>List of directories to store localized files in</description>
+    </property>
+    
+    <property>
+        <name>yarn.nodemanager.log-dirs</name>
+        <value>/opt/hadoop/logs/nm-log-dir</value>
+        <description>Where to store container logs</description>
+    </property>
+    
+    <!-- YARN Scheduler Configuration -->
+    <property>
+        <name>yarn.scheduler.maximum-allocation-mb</name>
+        <value>2048</value>
+        <description>Maximum limit of memory to allocate to each container request</description>
+    </property>
+    
+    <property>
+        <name>yarn.scheduler.minimum-allocation-mb</name>
+        <value>128</value>
+        <description>Minimum limit of memory to allocate to each container request</description>
+    </property>
+    
+    <property>
+        <name>yarn.scheduler.maximum-allocation-vcores</name>
+        <value>2</value>
+        <description>Maximum limit of virtual cores to allocate to each container request</description>
+    </property>
+    
+    <property>
+        <name>yarn.scheduler.minimum-allocation-vcores</name>
+        <value>1</value>
+        <description>Minimum limit of virtual cores to allocate to each container request</description>
+    </property>
+    
+    <!-- YARN Application Configuration -->
+    <property>
+        <name>yarn.app.mapreduce.am.resource.mb</name>
+        <value>512</value>
+        <description>Memory allocated for Application Master</description>
+    </property>
+    
+    <property>
+        <name>yarn.app.mapreduce.am.command-opts</name>
+        <value>-Xmx410m</value>
+        <description>Java opts for Application Master</description>
+    </property>
+    
+    <!-- YARN Timeline Service (optional for job history) -->
+    <property>
+        <name>yarn.timeline-service.enabled</name>
+        <value>false</value>
+        <description>Enable timeline service</description>
+    </property>
+    
+    <!-- YARN Log Aggregation -->
+    <property>
+        <name>yarn.log-aggregation-enable</name>
+        <value>true</value>
+        <description>Enable log aggregation</description>
+    </property>
+    
+    <property>
+        <name>yarn.log-aggregation.retain-seconds</name>
+        <value>604800</value>
+        <description>Log aggregation retention time (7 days)</description>
+    </property>
+      <!-- YARN Security (disabled for development) -->
+    <property>
+        <name>yarn.resourcemanager.principal</name>
+        <value></value>
+        <description>ResourceManager Kerberos principal</description>
+    </property>
+    
+    <property>
+        <name>yarn.nodemanager.principal</name>
+        <value></value>
+        <description>NodeManager Kerberos principal</description>
+    </property>
+    
+    <!-- YARN Capacity Scheduler Configuration -->
+    <property>
+        <name>yarn.resourcemanager.scheduler.class</name>
+        <value>org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler</value>
+        <description>Capacity Scheduler class</description>
+    </property>
+    
+    <property>
+        <name>yarn.scheduler.capacity.root.queues</name>
+        <value>default</value>
+        <description>The queues at the root level (root is the root queue)</description>
+    </property>
+    
+    <property>
+        <name>yarn.scheduler.capacity.root.default.capacity</name>
+        <value>100</value>
+        <description>Capacity percentage of the default queue</description>
+    </property>
+    
+    <property>
+        <name>yarn.scheduler.capacity.root.default.maximum-capacity</name>
+        <value>100</value>
+        <description>Maximum capacity percentage of the default queue</description>
+    </property>
+    
+    <property>
+        <name>yarn.scheduler.capacity.root.default.user-limit-factor</name>
+        <value>1</value>
+        <description>User limit factor for the default queue</description>
+    </property>
+    
+    <property>
+        <name>yarn.scheduler.capacity.root.default.state</name>
+        <value>RUNNING</value>
+        <description>State of the default queue</description>
+    </property>
+</configuration>

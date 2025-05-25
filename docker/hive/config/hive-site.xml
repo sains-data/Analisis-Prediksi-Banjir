@@ -1,0 +1,221 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+    <!-- ================================================================
+         HIVE 4.0.1 CONFIGURATION FOR FLOOD PREDICTION ANALYTICS
+         Docker Container Configuration
+         ================================================================ -->
+         
+    <!-- Metastore Configuration (Using Derby Embedded Database) -->
+    <property>
+        <name>javax.jdo.option.ConnectionURL</name>
+        <value>jdbc:derby:/opt/hive/metastore_db;create=true;databaseName=metastore_db</value>
+        <description>JDBC connect string for Derby metastore</description>
+    </property>
+    
+    <property>
+        <name>javax.jdo.option.ConnectionDriverName</name>
+        <value>org.apache.derby.jdbc.EmbeddedDriver</value>
+        <description>Driver class name for Derby metastore</description>
+    </property>
+    
+    <property>
+        <name>javax.jdo.option.ConnectionUserName</name>
+        <value>APP</value>
+        <description>Username to use against metastore database</description>
+    </property>
+    
+    <property>
+        <name>javax.jdo.option.ConnectionPassword</name>
+        <value>mine</value>
+        <description>Password to use against metastore database</description>
+    </property>
+
+    <!-- Derby Connection Pool Settings -->
+    <property>
+        <name>datanucleus.connectionPoolingType</name>
+        <value>None</value>
+        <description>Disable connection pooling for Derby to avoid transaction issues</description>
+    </property>
+    
+    <property>
+        <name>datanucleus.connectionPool.maxIdle</name>
+        <value>0</value>
+        <description>Maximum number of idle connections</description>
+    </property>
+    
+    <property>
+        <name>datanucleus.connectionPool.maxActive</name>
+        <value>1</value>
+        <description>Maximum number of active connections</description>
+    </property>
+    
+    <property>
+        <name>datanucleus.autoCommitTxns</name>
+        <value>true</value>
+        <description>Auto commit transactions</description>
+    </property>
+    
+    <property>
+        <name>datanucleus.retainValues</name>
+        <value>true</value>
+        <description>Retain values after commit</description>
+    </property>
+    
+    <!-- Additional Derby configuration to prevent locking -->
+    <property>
+        <name>datanucleus.connectionPool.testSQL</name>
+        <value>values(1)</value>
+        <description>SQL to test connections</description>
+    </property>
+    
+    <property>
+        <name>datanucleus.rdbms.initializeColumnInfo</name>
+        <value>LAZY</value>
+        <description>Lazy initialization of column info</description>
+    </property>
+    
+    <property>
+        <name>datanucleus.validateTables</name>
+        <value>false</value>
+        <description>Do not validate tables</description>
+    </property>
+    
+    <property>
+        <name>datanucleus.validateColumns</name>
+        <value>false</value>
+        <description>Do not validate columns</description>
+    </property>
+    
+    <property>
+        <name>datanucleus.validateConstraints</name>
+        <value>false</value>
+        <description>Do not validate constraints</description>
+    </property>
+
+    <!-- Metastore Configuration -->
+    <property>
+        <name>hive.metastore.uris</name>
+        <value></value>
+        <description>Empty for embedded metastore</description>
+    </property>
+    
+    <property>
+        <name>hive.metastore.local</name>
+        <value>true</value>
+        <description>Use local embedded metastore</description>
+    </property>
+    
+    <property>
+        <name>hive.metastore.warehouse.dir</name>
+        <value>/user/hive/warehouse</value>
+        <description>Location of default database for the warehouse</description>
+    </property>
+    
+    <!-- HDFS Configuration -->
+    <property>
+        <name>fs.defaultFS</name>
+        <value>hdfs://namenode:8020</value>
+        <description>The name of the default file system</description>
+    </property>
+    
+    <!-- Schema Configuration -->
+    <property>
+        <name>hive.metastore.schema.verification</name>
+        <value>false</value>
+        <description>Enforce metastore schema version consistency</description>
+    </property>
+    
+    <property>
+        <name>hive.metastore.schema.verification.record.version</name>
+        <value>false</value>
+        <description>Whether to record the schema version in the metastore</description>
+    </property>
+    
+    <property>
+        <name>datanucleus.autoCreateSchema</name>
+        <value>true</value>
+        <description>Auto create schema for Derby database</description>
+    </property>
+    
+    <property>
+        <name>datanucleus.autoCreateTables</name>
+        <value>true</value>
+        <description>Auto create tables for Derby database</description>
+    </property>
+    
+    <property>
+        <name>datanucleus.autoCreateColumns</name>
+        <value>true</value>
+        <description>Auto create columns for Derby database</description>
+    </property>
+    
+    <property>
+        <name>datanucleus.fixedDatastore</name>
+        <value>false</value>
+        <description>Allow datastore modifications</description>
+    </property>
+
+    <!-- HiveServer2 Configuration -->
+    <property>
+        <name>hive.server2.thrift.bind.host</name>
+        <value>0.0.0.0</value>
+        <description>Bind host on which to run the HiveServer2 Thrift service</description>
+    </property>
+    
+    <property>
+        <name>hive.server2.thrift.port</name>
+        <value>10000</value>
+        <description>Port number of HiveServer2 Thrift interface</description>
+    </property>
+    
+    <property>
+        <name>hive.server2.webui.host</name>
+        <value>0.0.0.0</value>
+        <description>Host interface for HiveServer2 Web UI</description>
+    </property>
+    
+    <property>
+        <name>hive.server2.webui.port</name>
+        <value>10002</value>
+        <description>Port for HiveServer2 Web UI</description>
+    </property>
+    
+    <!-- Authentication Configuration -->
+    <property>
+        <name>hive.server2.authentication</name>
+        <value>NONE</value>
+        <description>HiveServer2 authentication method</description>
+    </property>
+    
+    <property>
+        <name>hive.security.authorization.enabled</name>
+        <value>false</value>
+        <description>Enable or disable the Hive authorization</description>
+    </property>
+    
+    <!-- ACID Configuration (disabled for Derby compatibility) -->
+    <property>
+        <name>hive.support.concurrency</name>
+        <value>false</value>
+        <description>Disable concurrency support for Derby compatibility</description>
+    </property>
+    
+    <property>
+        <name>hive.txn.manager</name>
+        <value>org.apache.hadoop.hive.ql.lockmgr.DummyTxnManager</value>
+        <description>Use dummy transaction manager for Derby</description>
+    </property>
+    
+    <property>
+        <name>hive.compactor.initiator.on</name>
+        <value>false</value>
+        <description>Disable compactor initiator</description>
+    </property>
+    
+    <property>
+        <name>hive.compactor.worker.threads</name>
+        <value>0</value>
+        <description>No compactor worker threads</description>
+    </property>
+</configuration>

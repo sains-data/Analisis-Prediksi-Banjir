@@ -1,0 +1,263 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+    <!-- ================================================================
+         HBASE 2.6.1 CONFIGURATION FOR FLOOD PREDICTION ANALYTICS
+         ================================================================ -->
+    
+    <!-- Core HBase Configuration -->
+    <property>
+        <name>hbase.rootdir</name>
+        <value>hdfs://namenode:8020/hbase</value>
+        <description>The directory shared by HBase region servers and into which HBase persists</description>
+    </property>
+    
+    <property>
+        <name>hbase.cluster.distributed</name>
+        <value>true</value>
+        <description>The mode the cluster will be in. Possible values are false for standalone mode and true for distributed mode</description>
+    </property>
+    
+    <!-- ZooKeeper Configuration -->
+    <property>
+        <name>hbase.zookeeper.quorum</name>
+        <value>zookeeper</value>
+        <description>Comma separated list of servers in the ZooKeeper Quorum</description>
+    </property>
+    
+    <property>
+        <name>hbase.zookeeper.property.clientPort</name>
+        <value>2181</value>
+        <description>Property from ZooKeeper's config zoo.cfg. The port at which the clients will connect</description>
+    </property>
+    
+    <property>
+        <name>hbase.zookeeper.property.dataDir</name>
+        <value>/data/zookeeper</value>
+        <description>Property from ZooKeeper's config zoo.cfg. The directory where the snapshot is stored</description>
+    </property>
+    
+    <!-- Master Configuration -->
+    <property>
+        <name>hbase.master.hostname</name>
+        <value>hbase-master</value>
+        <description>The hostname of the HBase Master</description>
+    </property>
+    
+    <property>
+        <name>hbase.master.port</name>
+        <value>16000</value>
+        <description>The port the HBase Master should bind to</description>
+    </property>
+    
+    <property>
+        <name>hbase.master.info.port</name>
+        <value>16010</value>
+        <description>The port for the HBase Master web UI</description>
+    </property>
+    
+    <property>
+        <name>hbase.master.info.bindAddress</name>
+        <value>0.0.0.0</value>
+        <description>The bind address for the HBase Master web UI</description>
+    </property>
+    
+    <!-- RegionServer Configuration -->
+    <property>
+        <name>hbase.regionserver.hostname</name>
+        <value>hbase-regionserver</value>
+        <description>The hostname of the HBase RegionServer</description>
+    </property>
+    
+    <property>
+        <name>hbase.regionserver.port</name>
+        <value>16020</value>
+        <description>The port the HBase RegionServer should bind to</description>
+    </property>
+    
+    <property>
+        <name>hbase.regionserver.info.port</name>
+        <value>16030</value>
+        <description>The port for the HBase RegionServer web UI</description>
+    </property>
+    
+    <property>
+        <name>hbase.regionserver.info.bindAddress</name>
+        <value>0.0.0.0</value>
+        <description>The bind address for the HBase RegionServer web UI</description>
+    </property>
+    
+    <!-- Memory Configuration -->
+    <property>
+        <name>hbase.regionserver.global.memstore.size</name>
+        <value>0.4</value>
+        <description>Maximum size of all memstores in a region server before flushes and blocking updates are triggered</description>
+    </property>
+    
+    <property>
+        <name>hbase.regionserver.global.memstore.size.lower.limit</name>
+        <value>0.35</value>
+        <description>Maximum size of all memstores in a region server before forcing a flush</description>
+    </property>
+    
+    <property>
+        <name>hbase.hregion.memstore.flush.size</name>
+        <value>134217728</value>
+        <description>Memstore will be flushed to disk if size of the memstore exceeds this number of bytes (128MB)</description>
+    </property>
+    
+    <!-- BlockCache Configuration -->
+    <property>
+        <name>hfile.block.cache.size</name>
+        <value>0.4</value>
+        <description>Percentage of maximum heap (-Xmx setting) to allocate to block cache</description>
+    </property>
+    
+    <property>
+        <name>hbase.bucketcache.ioengine</name>
+        <value>heap</value>
+        <description>Where to store the contents of the bucketcache</description>
+    </property>
+    
+    <!-- Compaction Configuration -->
+    <property>
+        <name>hbase.hstore.compaction.min</name>
+        <value>3</value>
+        <description>The minimum number of StoreFiles which must be eligible for compaction</description>
+    </property>
+    
+    <property>
+        <name>hbase.hstore.compaction.max</name>
+        <value>10</value>
+        <description>The maximum number of StoreFiles which will be selected for a single minor compaction</description>
+    </property>
+    
+    <property>
+        <name>hbase.hstore.blockingStoreFiles</name>
+        <value>16</value>
+        <description>If more than this number of HStoreFiles exist in any one HStore, updates are blocked</description>
+    </property>
+    
+    <!-- Region Configuration -->
+    <property>
+        <name>hbase.hregion.max.filesize</name>
+        <value>10737418240</value>
+        <description>Maximum HFile size. If the sum of the sizes of a region's HFiles has grown to exceed this value, the region is split in two (10GB)</description>
+    </property>
+    
+    <property>
+        <name>hbase.regions.slop</name>
+        <value>0.2</value>
+        <description>Rebalance if any regionserver has average + (average * slop) regions</description>
+    </property>
+    
+    <!-- WAL Configuration -->
+    <property>
+        <name>hbase.wal.provider</name>
+        <value>filesystem</value>
+        <description>The WAL provider implementation</description>
+    </property>
+    
+    <property>
+        <name>hbase.regionserver.wal.enablecompression</name>
+        <value>true</value>
+        <description>Enable compression of hlog files</description>
+    </property>
+    
+    <property>
+        <name>hbase.regionserver.hlog.blocksize</name>
+        <value>134217728</value>
+        <description>Block size for HLog files (128MB)</description>
+    </property>
+    
+    <!-- RPC Configuration -->
+    <property>
+        <name>hbase.rpc.timeout</name>
+        <value>300000</value>
+        <description>This is for the RPC layer to define how long (millisecond) HBase client applications take for a remote call to time out (5 minutes)</description>
+    </property>
+    
+    <property>
+        <name>hbase.client.scanner.timeout.period</name>
+        <value>300000</value>
+        <description>Client scanner lease period in milliseconds (5 minutes)</description>
+    </property>
+    
+    <!-- Table Configuration -->
+    <property>
+        <name>hbase.table.sanity.checks</name>
+        <value>true</value>
+        <description>Enable sanity checks for tables</description>
+    </property>
+    
+    <property>
+        <name>hbase.hregion.majorcompaction</name>
+        <value>604800000</value>
+        <description>Time between major compactions of all HStoreFiles in a region (7 days in milliseconds)</description>
+    </property>
+    
+    <!-- Security Configuration (disabled for development) -->
+    <property>
+        <name>hbase.security.authentication</name>
+        <value>simple</value>
+        <description>HBase security authentication method</description>
+    </property>
+    
+    <property>
+        <name>hbase.security.authorization</name>
+        <value>false</value>
+        <description>Enable HBase authorization</description>
+    </property>
+    
+    <!-- Performance Optimizations for Time-Series Data (Flood Monitoring) -->
+    <property>
+        <name>hbase.coprocessor.region.classes</name>
+        <value></value>
+        <description>A comma-separated list of coprocessors that are loaded by default on all tables</description>
+    </property>
+    
+    <property>
+        <name>hbase.balancer.period</name>
+        <value>300000</value>
+        <description>Period at which the region balancer runs in the Master (5 minutes)</description>
+    </property>
+    
+    <!-- Connection Pool Configuration -->
+    <property>
+        <name>hbase.client.connection.impl</name>
+        <value>org.apache.hadoop.hbase.client.ConnectionImplementation</value>
+        <description>Connection implementation to use</description>
+    </property>
+    
+    <property>
+        <name>hbase.rpc.controllerfactory.class</name>
+        <value>org.apache.hadoop.hbase.ipc.RpcControllerFactory</value>
+        <description>Factory to create the RPC controller</description>
+    </property>
+    
+    <!-- Network Configuration -->
+    <property>
+        <name>hbase.ipc.server.listen.queue.size</name>
+        <value>128</value>
+        <description>Default size of the HBase IPC server listen queue</description>
+    </property>
+    
+    <property>
+        <name>hbase.regionserver.handler.count</name>
+        <value>30</value>
+        <description>Count of RPC Listener instances spun up on RegionServers</description>
+    </property>
+    
+    <!-- Backup and Recovery -->
+    <property>
+        <name>hbase.master.cleaner.interval</name>
+        <value>600000</value>
+        <description>How long the HMaster sleeps (milliseconds) between scans of the file system for HFile cleaning (10 minutes)</description>
+    </property>
+    
+    <property>
+        <name>hbase.master.hfilecleaner.ttl</name>
+        <value>604800000</value>
+        <description>Time-to-live for HFiles in the archive directory (7 days)</description>
+    </property>
+</configuration>
