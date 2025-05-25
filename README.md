@@ -35,7 +35,8 @@ This project showcases the integration of **multi-source flood data** using a fu
 2. Initialize the system (formats namenode and starts all services):
    ```bash
    chmod +x scripts/init-namenode.sh
-   ./scripts/init-namenode.sh
+   bash ./scripts/init-namenode.sh
+   docker-compose up -d
    ```
 
 3. Verify all services are running:
