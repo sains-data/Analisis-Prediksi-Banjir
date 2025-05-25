@@ -17,6 +17,53 @@ This project showcases the integration of **multi-source flood data** using a fu
 
 ---
 
+## 🔧 Installation & Setup
+
+### Prerequisites
+- Docker and Docker Compose installed
+- Git
+- At least 8GB RAM available for Docker
+
+### Quick Start
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/sains-data/Analisis-Prediksi-Banjir.git
+   cd Analisis-Prediksi-Banjir
+   ```
+
+2. Initialize the system (formats namenode and starts all services):
+   ```bash
+   chmod +x scripts/init-namenode.sh
+   ./scripts/init-namenode.sh
+   ```
+
+3. Verify all services are running:
+   ```bash
+   docker-compose ps
+   ```
+
+4. Access web interfaces:
+   - HDFS NameNode: `http://localhost:9870`
+   - YARN ResourceManager: `http://localhost:8088`
+   - Spark Master: `http://localhost:8080`
+   - Jupyter Notebook: `http://localhost:8888`
+   - Superset: `http://localhost:8089`
+   - HBase Master: `http://localhost:16010`
+
+### Troubleshooting
+
+If you encounter issues with the namenode not starting properly:
+```bash
+# Stop all containers
+docker-compose down
+
+# Run the init script again
+./scripts/init-namenode.sh
+```
+
+---
+
 ## 🧱 System Architecture
 
 We adopt a **multi-layered architecture** and hybrid processing approach:
