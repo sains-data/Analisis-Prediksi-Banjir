@@ -138,26 +138,125 @@ flood_prediction_pipeline/
 ## 📦 Folder Structure
 
 ```
-flood-bigdata-lampung/
-│
-├── datasets/                    # Raw and sample flood datasets (BMKG, BNPB, IoT, DEMNAS)
-├── docs/                        # Diagrams, specs, and documentation
-│   ├── architecture.png
-│   ├── data_catalog.md
-│   ├── pipeline.drawio
-│   └── dag_airflow.drawio
-├── scripts/                     # Spark, Hive, and Kafka scripts
-│   ├── batch/
-│   ├── stream/
-│   └── ml/
-├── docker/                      # Docker & Docker Compose setup
-│   ├── docker-compose.yml
-│   └── cluster-config/
-├── notebooks/                   # Jupyter analysis notebooks
-├── airflow_dags/               # DAGs for pipeline orchestration
-├── requirements.txt
-├── README.md
-└── LICENSE
+Analisis-Prediksi-Banjir/
+└── Analisis-Prediksi-Banjir/
+    ├── .gitignore
+    ├── docker-compose.yml
+    ├── hive-server-entrypoint.sh
+    ├── LICENSE
+    ├── README.md
+    ├── setup.sh
+    ├── test_mapreduce.sh
+    ├── .git/
+    │   ├── config, HEAD, index, etc.
+    │   └── ... (standard Git repo files and structure)
+    ├── config/
+    │   ├── hadoop/
+    │   │   ├── core-site.xml
+    │   │   ├── hdfs-site.xml
+    │   │   ├── mapred-site.xml
+    │   │   └── yarn-site.xml
+    │   ├── hbase/
+    │   │   └── hbase-site.xml
+    │   ├── hive/
+    │   │   ├── hive-site.xml
+    │   │   └── simple-hive-site.xml
+    │   └── spark/
+    │       └── spark-defaults.conf
+    ├── data/
+    │   ├── processed/
+    │   │   └── .gitkeep
+    │   ├── raw/
+    │   │   ├── .gitkeep
+    │   │   ├── bmkg/cuaca_historis/data_cuaca_bmkg.csv
+    │   │   ├── bnpb/kejadian_banjir/data_banjir_historis.csv
+    │   │   ├── demnas/topografi/data_elevasi_demnas.csv
+    │   │   └── iot/data_sensor_iot.json
+    │   ├── sample/
+    │   │   └── .gitkeep
+    │   └── serving/
+    │       └── .gitkeep
+    ├── docker/
+    │   ├── README.md
+    │   ├── hadoop/
+    │   │   ├── .gitkeep
+    │   │   ├── Dockerfile.datanode
+    │   │   ├── Dockerfile.namenode
+    │   │   ├── Dockerfile.resourcemanager
+    │   │   ├── config/
+    │   │   │   ├── core-site.xml
+    │   │   │   ├── hadoop-env.sh
+    │   │   │   ├── hdfs-site.xml
+    │   │   │   ├── mapred-site.xml
+    │   │   │   └── yarn-site.xml
+    │   │   └── scripts/
+    │   │       ├── entrypoint-datanode.sh
+    │   │       ├── entrypoint-namenode.sh
+    │   │       └── entrypoint-resourcemanager.sh
+    │   ├── hbase/
+    │   │   ├── Dockerfile.master
+    │   │   ├── config/
+    │   │   │   ├── hbase-env.sh
+    │   │   │   └── hbase-site.xml
+    │   │   └── scripts/
+    │   │       └── entrypoint-hbase-master.sh
+    │   ├── hive/
+    │   │   ├── .gitkeep
+    │   │   ├── Dockerfile
+    │   │   ├── Dockerfile.hive
+    │   │   ├── config/
+    │   │   │   ├── hive-env.sh
+    │   │   │   └── hive-site.xml
+    │   │   └── scripts/
+    │   │       └── entrypoint-hive.sh
+    │   ├── kafka/
+    │   │   └── .gitkeep
+    │   ├── scripts/
+    │   │   └── .gitkeep
+    │   ├── spark/
+    │   │   ├── .gitkeep
+    │   │   ├── Dockerfile.master
+    │   │   ├── Dockerfile.worker
+    │   │   ├── config/
+    │   │   │   ├── spark-defaults.conf
+    │   │   │   └── spark-env.sh
+    │   │   └── scripts/
+    │   │       ├── entrypoint-spark-master.sh
+    │   │       └── entrypoint-spark-worker.sh
+    │   └── zookeeper/
+    │       ├── Dockerfile
+    │       ├── config/
+    │       │   └── zoo.cfg
+    │       └── scripts/
+    │           └── entrypoint-zookeeper.sh
+    ├── hive/
+    │   ├── .gitkeep
+    │   └── data/metastore/.gitkeep
+    ├── notebooks/
+    │   ├── .gitkeep
+    │   └── hive_spark_integration_test.ipynb
+    ├── scripts/
+    │   ├── backup_system.sh
+    │   ├── init-namenode.sh
+    │   ├── init_system.sh
+    │   ├── stop.sh
+    │   ├── test_pipeline.py
+    │   ├── analytics/
+    │   │   └── .gitkeep
+    │   ├── ingestion/
+    │   │   ├── .gitkeep
+    │   │   ├── bmkg_ingestion.py
+    │   │   └── ingest_bmkg.py
+    │   ├── ml/
+    │   │   └── flood_prediction_model.py
+    │   └── processing/
+    │       └── .gitkeep
+    ├── spark/
+    │   └── data/
+    │       └── .gitkeep
+    └── superset/
+        └── superset_config.py
+
 ```
 
 ---
