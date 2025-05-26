@@ -148,8 +148,10 @@ Analisis-Prediksi-Banjir/
     ├── setup.sh
     ├── test_mapreduce.sh
     ├── .git/
-    │   ├── config, HEAD, index, etc.
-    │   └── ... (standard Git repo files and structure)
+    │   ├── config
+    │   ├── HEAD
+    │   ├── index
+    │   └── ... (standard Git internals)
     ├── config/
     │   ├── hadoop/
     │   │   ├── core-site.xml
@@ -168,10 +170,18 @@ Analisis-Prediksi-Banjir/
     │   │   └── .gitkeep
     │   ├── raw/
     │   │   ├── .gitkeep
-    │   │   ├── bmkg/cuaca_historis/data_cuaca_bmkg.csv
-    │   │   ├── bnpb/kejadian_banjir/data_banjir_historis.csv
-    │   │   ├── demnas/topografi/data_elevasi_demnas.csv
-    │   │   └── iot/data_sensor_iot.json
+    │   │   ├── bmkg/
+    │   │   │   ├── cuaca_historis/
+    │   │   │   │   └── data_cuaca_bmkg.csv
+    │   │   │   └── other_sources/
+    │   │   ├── bnpb/
+    │   │   │   └── kejadian_banjir/
+    │   │   │       └── data_banjir_historis.csv
+    │   │   ├── demnas/
+    │   │   │   └── topografi/
+    │   │   │       └── data_elevasi_demnas.csv
+    │   │   └── iot/
+    │   │       └── data_sensor_iot.json
     │   ├── sample/
     │   │   └── .gitkeep
     │   └── serving/
@@ -231,7 +241,9 @@ Analisis-Prediksi-Banjir/
     │           └── entrypoint-zookeeper.sh
     ├── hive/
     │   ├── .gitkeep
-    │   └── data/metastore/.gitkeep
+    │   └── data/
+    │       └── metastore/
+    │           └── .gitkeep
     ├── notebooks/
     │   ├── .gitkeep
     │   └── hive_spark_integration_test.ipynb
