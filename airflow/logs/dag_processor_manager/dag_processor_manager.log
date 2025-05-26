@@ -1,0 +1,565 @@
+[2025-05-26T09:36:29.434+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2025-05-26T09:36:29.435+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2025-05-26T09:36:29.437+0000] {manager.py:485} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-05-26T09:36:29.439+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2025-05-26T09:36:29.668+0000] {manager.py:824} INFO - There are 3 files in /opt/airflow/dags
+[2025-05-26T09:36:30.151+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/opt/airflow/dags/lampung_data_quality_monitoring.py        78  0.11s             0           0                                                   0
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 0           0                                                   0
+/opt/airflow/dags/lampung_flood_prediction_real_data.py     77  0.20s             0           0                                                   0
+================================================================================
+[2025-05-26T09:36:58.453+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  3.77s           2025-05-26T09:36:33                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  3.51s           2025-05-26T09:36:33                      12
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  2.06s           2025-05-26T09:36:35                      12
+================================================================================
+[2025-05-26T09:37:26.831+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  2.30s           2025-05-26T09:37:05                      12
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  0.16s           2025-05-26T09:37:05                      12
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  0.09s           2025-05-26T09:37:04                      12
+================================================================================
+[2025-05-26T09:37:55.123+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  2.12s           2025-05-26T09:37:36                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  2.11s           2025-05-26T09:37:38                      12
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  2.03s           2025-05-26T09:37:38                      12
+================================================================================
+[2025-05-26T09:38:23.291+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  2.34s           2025-05-26T09:38:10                      12
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  2.19s           2025-05-26T09:38:09                      12
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  2.01s           2025-05-26T09:38:11                      12
+================================================================================
+[2025-05-26T09:38:51.588+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  2.03s           2025-05-26T09:38:41                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  1.59s           2025-05-26T09:38:42                      12
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  1.42s           2025-05-26T09:38:43                      12
+================================================================================
+[2025-05-26T09:39:19.671+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  1.95s           2025-05-26T09:39:14                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  1.76s           2025-05-26T09:39:14                      12
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  1.47s           2025-05-26T09:39:15                      12
+================================================================================
+[2025-05-26T09:39:48.585+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  1.62s           2025-05-26T09:39:47                      12
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  1.56s           2025-05-26T09:39:45                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  1.50s           2025-05-26T09:39:46                      12
+================================================================================
+[2025-05-26T09:40:17.371+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  1.62s           2025-05-26T09:39:47                      12
+/opt/airflow/dags/lampung_flood_prediction_real_data.py    169  1.10s             1           0  1.56s           2025-05-26T09:39:45                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py       171  0.01s             1           0  1.50s           2025-05-26T09:39:46                      12
+================================================================================
+[2025-05-26T09:40:46.325+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  1.59s           2025-05-26T09:40:17                      12
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  1.55s           2025-05-26T09:40:19                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  1.46s           2025-05-26T09:40:18                      12
+================================================================================
+[2025-05-26T09:41:14.262+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  1.05s           2025-05-26T09:40:49                      12
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  0.08s           2025-05-26T09:40:49                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  -0.50s          2025-05-26T09:40:49                      12
+================================================================================
+[2025-05-26T09:41:29.584+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2025-05-26T09:41:29.871+0000] {manager.py:824} INFO - There are 3 files in /opt/airflow/dags
+[2025-05-26T09:41:42.228+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  1.51s           2025-05-26T09:41:20                      12
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  1.46s           2025-05-26T09:41:21                      12
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  1.44s           2025-05-26T09:41:22                      12
+================================================================================
+[2025-05-26T09:42:10.584+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  1.94s           2025-05-26T09:41:55                      12
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  1.63s           2025-05-26T09:41:54                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  1.63s           2025-05-26T09:41:53                      12
+================================================================================
+[2025-05-26T09:42:39.335+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  2.70s           2025-05-26T09:42:27                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  2.59s           2025-05-26T09:42:26                      12
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  2.48s           2025-05-26T09:42:29                      12
+================================================================================
+[2025-05-26T09:43:07.554+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  2.37s           2025-05-26T09:42:59                      12
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  2.37s           2025-05-26T09:43:00                      12
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  1.99s           2025-05-26T09:43:01                      12
+================================================================================
+[2025-05-26T09:43:35.960+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  2.08s           2025-05-26T09:43:33                      12
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  1.87s           2025-05-26T09:43:33                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  1.68s           2025-05-26T09:43:31                      12
+================================================================================
+[2025-05-26T09:44:03.906+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  2.08s           2025-05-26T09:43:33                      12
+/opt/airflow/dags/lampung_flood_prediction_real_data.py    261  0.40s             1           0  1.87s           2025-05-26T09:43:33                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  1.59s           2025-05-26T09:44:03                      12
+================================================================================
+[2025-05-26T09:44:31.793+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  1.64s           2025-05-26T09:44:05                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  1.59s           2025-05-26T09:44:03                      12
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  -0.59s          2025-05-26T09:44:04                      12
+================================================================================
+[2025-05-26T09:44:59.863+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  1.93s           2025-05-26T09:44:37                      12
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  1.71s           2025-05-26T09:44:36                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  1.56s           2025-05-26T09:44:35                      12
+================================================================================
+[2025-05-26T09:45:27.860+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  1.80s           2025-05-26T09:45:08                      12
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  1.75s           2025-05-26T09:45:09                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  1.64s           2025-05-26T09:45:06                      12
+================================================================================
+[2025-05-26T09:45:55.690+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  1.81s           2025-05-26T09:45:40                      12
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  1.79s           2025-05-26T09:45:41                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  1.58s           2025-05-26T09:45:39                      12
+================================================================================
+[2025-05-26T09:46:23.782+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  1.62s           2025-05-26T09:46:12                      12
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  1.55s           2025-05-26T09:46:13                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  1.47s           2025-05-26T09:46:11                      12
+================================================================================
+[2025-05-26T09:46:29.862+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2025-05-26T09:46:30.013+0000] {manager.py:824} INFO - There are 3 files in /opt/airflow/dags
+[2025-05-26T09:46:51.738+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  1.88s           2025-05-26T09:46:43                      12
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  1.78s           2025-05-26T09:46:45                      12
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  1.65s           2025-05-26T09:46:44                      12
+================================================================================
+[2025-05-26T09:47:19.590+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  1.72s           2025-05-26T09:47:15                      12
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  1.69s           2025-05-26T09:47:16                      12
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  1.54s           2025-05-26T09:47:17                      12
+================================================================================
+[2025-05-26T09:47:48.095+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_dag.py          351  0.61s             1           0  1.69s           2025-05-26T09:47:16                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  1.63s           2025-05-26T09:47:47                      12
+/opt/airflow/dags/lampung_flood_prediction_real_data.py    353  0.01s             1           0  1.54s           2025-05-26T09:47:17                      12
+================================================================================
+[2025-05-26T09:48:15.791+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  1.63s           2025-05-26T09:47:47                      12
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  -0.68s          2025-05-26T09:47:46                      12
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  -0.71s          2025-05-26T09:47:47                      12
+================================================================================
+[2025-05-26T09:48:42.619+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  1.54s           2025-05-26T09:48:19                      12
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  1.43s           2025-05-26T09:48:18                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  1.36s           2025-05-26T09:48:20                      12
+================================================================================
+[2025-05-26T09:49:10.673+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  1.62s           2025-05-26T09:48:52                      12
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  1.61s           2025-05-26T09:48:51                      12
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  1.53s           2025-05-26T09:48:50                      12
+================================================================================
+[2025-05-26T09:49:38.790+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  1.54s           2025-05-26T09:49:22                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  1.50s           2025-05-26T09:49:24                      12
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  1.49s           2025-05-26T09:49:23                      12
+================================================================================
+[2025-05-26T09:50:06.973+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  2.00s           2025-05-26T09:49:54                      12
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  1.63s           2025-05-26T09:49:55                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  1.43s           2025-05-26T09:49:56                      12
+================================================================================
+[2025-05-26T09:50:35.253+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  1.62s           2025-05-26T09:50:26                      12
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  1.61s           2025-05-26T09:50:27                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  1.59s           2025-05-26T09:50:28                      12
+================================================================================
+[2025-05-26T09:51:03.474+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  1.61s           2025-05-26T09:51:00                      12
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  1.50s           2025-05-26T09:50:58                      12
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  1.40s           2025-05-26T09:50:59                      12
+================================================================================
+[2025-05-26T09:51:30.282+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2025-05-26T09:51:30.532+0000] {manager.py:824} INFO - There are 3 files in /opt/airflow/dags
+[2025-05-26T09:51:31.706+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  1.78s           2025-05-26T09:51:30                      12
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  0.05s           2025-05-26T09:51:29                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  -0.32s          2025-05-26T09:51:30                      12
+================================================================================
+[2025-05-26T09:51:59.862+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  1.78s           2025-05-26T09:51:30                      12
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  0.05s           2025-05-26T09:51:29                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  -0.32s          2025-05-26T09:51:30                      12
+================================================================================
+[2025-05-26T09:52:27.986+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  1.65s           2025-05-26T09:52:03                      12
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  1.58s           2025-05-26T09:52:02                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  1.56s           2025-05-26T09:52:02                      12
+================================================================================
+[2025-05-26T09:52:56.222+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  1.81s           2025-05-26T09:52:35                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  1.80s           2025-05-26T09:52:35                      12
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  1.72s           2025-05-26T09:52:33                      12
+================================================================================
+[2025-05-26T09:53:24.212+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  2.23s           2025-05-26T09:53:06                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  2.20s           2025-05-26T09:53:07                      12
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  1.67s           2025-05-26T09:53:08                      12
+================================================================================
+[2025-05-26T09:53:52.734+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  2.18s           2025-05-26T09:53:39                      12
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  2.00s           2025-05-26T09:53:41                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  1.71s           2025-05-26T09:53:40                      12
+================================================================================
+[2025-05-26T09:54:21.070+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  4.85s           2025-05-26T09:54:15                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  4.26s           2025-05-26T09:54:15                      12
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  1.76s           2025-05-26T09:54:16                      12
+================================================================================
+[2025-05-26T09:54:48.921+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_dag.py          521  1.38s             1           0  1.76s           2025-05-26T09:54:16                      12
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  -0.25s          2025-05-26T09:54:45                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  -0.29s          2025-05-26T09:54:44                      12
+================================================================================
+[2025-05-26T09:55:17.018+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  1.97s           2025-05-26T09:55:16                      12
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  1.89s           2025-05-26T09:54:49                      12
+/opt/airflow/dags/lampung_flood_prediction_real_data.py    531  0.87s             1           0  -0.25s          2025-05-26T09:54:45                      12
+================================================================================
+[2025-05-26T09:55:45.613+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  2.09s           2025-05-26T09:55:18                      12
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  2.08s           2025-05-26T09:55:22                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  1.97s           2025-05-26T09:55:16                      12
+================================================================================
+[2025-05-26T09:56:14.314+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  1.96s           2025-05-26T09:55:54                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  1.95s           2025-05-26T09:55:49                      12
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  1.84s           2025-05-26T09:55:50                      12
+================================================================================
+[2025-05-26T09:56:30.715+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2025-05-26T09:56:30.896+0000] {manager.py:824} INFO - There are 3 files in /opt/airflow/dags
+[2025-05-26T09:56:42.133+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  2.54s           2025-05-26T09:56:27                      12
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  1.82s           2025-05-26T09:56:23                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  1.79s           2025-05-26T09:56:22                      12
+================================================================================
+[2025-05-26T09:57:10.235+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  2.34s           2025-05-26T09:56:55                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  2.15s           2025-05-26T09:56:54                      12
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  1.89s           2025-05-26T09:56:59                      12
+================================================================================
+[2025-05-26T09:57:38.842+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  2.20s           2025-05-26T09:57:27                      12
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  2.17s           2025-05-26T09:57:28                      12
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  2.06s           2025-05-26T09:57:32                      12
+================================================================================
+[2025-05-26T09:58:06.740+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  2.06s           2025-05-26T09:58:05                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  0.86s           2025-05-26T09:57:59                      12
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  0.41s           2025-05-26T09:58:00                      12
+================================================================================
+[2025-05-26T09:58:35.109+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  2.24s           2025-05-26T09:58:32                      12
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  2.23s           2025-05-26T09:58:32                      12
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  2.06s           2025-05-26T09:58:05                      12
+================================================================================
+[2025-05-26T09:59:03.842+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  2.76s           2025-05-26T09:58:38                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py       620  1.05s             1           0  2.24s           2025-05-26T09:58:32                      12
+/opt/airflow/dags/lampung_flood_prediction_real_data.py    619  1.11s             1           0  2.23s           2025-05-26T09:58:32                      12
+================================================================================
+[2025-05-26T09:59:32.289+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  2.20s           2025-05-26T09:59:04                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  2.12s           2025-05-26T09:59:04                      12
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  1.90s           2025-05-26T09:59:10                      12
+================================================================================
+[2025-05-26T10:00:00.527+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  2.53s           2025-05-26T09:59:44                      12
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  1.97s           2025-05-26T09:59:37                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  1.84s           2025-05-26T09:59:37                      12
+================================================================================
+[2025-05-26T10:00:28.341+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  1.92s           2025-05-26T10:00:09                      12
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  1.89s           2025-05-26T10:00:16                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  1.84s           2025-05-26T10:00:09                      12
+================================================================================
+[2025-05-26T10:00:56.199+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  2.02s           2025-05-26T10:00:42                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  1.94s           2025-05-26T10:00:42                      12
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  -0.39s          2025-05-26T10:00:46                      12
+================================================================================
+[2025-05-26T10:01:24.018+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  1.73s           2025-05-26T10:01:14                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  1.47s           2025-05-26T10:01:14                      12
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  1.42s           2025-05-26T10:01:18                      12
+================================================================================
+[2025-05-26T10:01:30.762+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2025-05-26T10:01:30.915+0000] {manager.py:824} INFO - There are 3 files in /opt/airflow/dags
+[2025-05-26T10:01:51.982+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/lampung_flood_prediction_dag.py                                 1           0  1.47s           2025-05-26T10:01:50                      12
+/opt/airflow/dags/lampung_data_quality_monitoring.py                              1           0  1.39s           2025-05-26T10:01:46                      12
+/opt/airflow/dags/lampung_flood_prediction_real_data.py                           1           0  1.35s           2025-05-26T10:01:46                      12
+================================================================================

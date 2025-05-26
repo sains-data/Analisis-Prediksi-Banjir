@@ -1,0 +1,16 @@
+kabupaten_kota,flood_risk_probability,flood_risk_category
+Bandar Lampung,0.14,Low
+Lampung Barat,0.25,Low
+Lampung Selatan,0.04,Low
+Lampung Tengah,0.72,High
+Lampung Timur,0.21,Low
+Lampung Utara,0.88,Very High
+Mesuji,0.18,Low
+Metro,0.14,Low
+Pesawaran,0.14,Low
+Pesisir Barat,0.93,Very High
+Pringsewu,0.82,Very High
+Tanggamus,0.83,Very High
+Tulang Bawang,0.16,Low
+Tulang Bawang Barat,0.64,High
+Way Kanan,0.14,Low

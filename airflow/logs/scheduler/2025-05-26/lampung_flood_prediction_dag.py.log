@@ -1,7 +1,3 @@
-[2025-05-26T05:27:54.941+0000] {processor.py:186} INFO - Started process (PID=1128) to work on /opt/airflow/dags/lampung_flood_prediction_dag.py
-[2025-05-26T05:27:54.943+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/lampung_flood_prediction_dag.py for tasks to queue
-[2025-05-26T05:27:54.952+0000] {logging_mixin.py:190} INFO - [2025-05-26T05:27:54.951+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/lampung_flood_prediction_dag.py
-[2025-05-26T05:27:56.532+0000] {processor.py:925} INFO - DAG(s) 'lampung_flood_prediction_pipeline' retrieved from /opt/airflow/dags/lampung_flood_prediction_dag.py
-[2025-05-26T05:27:56.594+0000] {logging_mixin.py:190} INFO - [2025-05-26T05:27:56.594+0000] {dag.py:3239} INFO - Sync 1 DAGs
-[2025-05-26T05:27:56.645+0000] {logging_mixin.py:190} INFO - [2025-05-26T05:27:56.645+0000] {dag.py:4180} INFO - Setting next_dagrun for lampung_flood_prediction_pipeline to 2025-05-26 04:00:00+00:00, run_after=2025-05-26 05:00:00+00:00
-[2025-05-26T05:27:56.750+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/lampung_flood_prediction_dag.py took 1.838 seconds
+[2025-05-26T10:02:20.835+0000] {processor.py:186} INFO - Started process (PID=702) to work on /opt/airflow/dags/lampung_flood_prediction_dag.py
+[2025-05-26T10:02:20.839+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/lampung_flood_prediction_dag.py for tasks to queue
+[2025-05-26T10:02:20.849+0000] {logging_mixin.py:190} INFO - [2025-05-26T10:02:20.847+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/lampung_flood_prediction_dag.py

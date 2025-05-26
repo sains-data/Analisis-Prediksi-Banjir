@@ -1,0 +1,16 @@
+kabupaten_kota,flood_location,point_count,elevation_mean,elevation_min,elevation_max,elevation_std,slope_mean,confidence_mean
+Bandar Lampung,Bandar Lampung,2256,132.72,1.0,1211.12,172.09,7.88,0.95
+Lampung Barat,Lampung Barat,21463,1476.2,74.04,2640.0,812.03,29.22,0.83
+Lampung Selatan,Lampung Selatan,12624,79.57,1.9,123.7,22.05,9.46,0.87
+Lampung Tengah,Lampung Tengah,12143,169.03,67.2,729.36,105.77,12.61,0.88
+Lampung Timur,Lampung Timur,17105,103.85,1.2,158.76,19.48,9.41,0.86
+Lampung Utara,Lampung Utara,17941,1213.62,53.04,2640.0,762.15,27.45,0.85
+Mesuji,Mesuji,715,163.07,96.48,196.44,17.25,9.93,0.8
+Metro,Metro,651,96.01,71.88,118.92,9.99,10.57,0.97
+Pesawaran,Pesawaran,10960,83.04,-5.35,1069.65,85.13,9.6,0.86
+Pesisir Barat,Pesisir Barat,19158,1586.11,48.12,2640.0,849.31,30.03,0.81
+Pringsewu,Pringsewu,5721,216.11,-5.76,1560.89,219.5,8.83,0.91
+Tanggamus,Tanggamus,18145,332.41,-4.24,2039.8,403.22,16.8,0.84
+Tulang Bawang,Tulang Bawang,21454,116.17,41.52,186.6,23.84,10.48,0.84
+Tulang Bawang Barat,Tulang Bawang Barat,11817,375.72,27.96,1992.36,397.98,15.49,0.89
+Way Kanan,Way Kanan,22228,298.45,42.72,2166.0,382.24,13.43,0.82

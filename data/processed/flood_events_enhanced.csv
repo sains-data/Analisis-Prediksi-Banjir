@@ -1,0 +1,156 @@
+tanggal,lokasi,tinggi_air_cm,area_terdampak_ha,durasi_jam,jumlah_pengungsi,bulan,tahun,musim
+2015-09-01,Pesawaran,40,10.6,5,0,9.0,2015.0,Musim Kemarau
+,Bandar Lampung,75,72.2,17,390,,,Peralihan
+2015-06-02,Lampung Utara,22,8.7,4,0,6.0,2015.0,Musim Kemarau
+,Metro,296,913.5,45,18201,,,Peralihan
+2015-02-04,Metro,50,35.2,5,38,2.0,2015.0,Musim Hujan
+2015-07-04,Lampung Utara,17,6.8,4,0,7.0,2015.0,Musim Kemarau
+,Way Kanan,30,4.1,2,0,,,Peralihan
+2015-01-11,Lampung Tengah,24,14.8,5,0,1.0,2015.0,Musim Hujan
+,Bandar Lampung,32,1.4,2,0,,,Peralihan
+,Pesawaran,214,606.4,32,7736,,,Peralihan
+2016-11-01,Bandar Lampung,123,971.0,48,6738,11.0,2016.0,Peralihan
+,Mesuji,13,11.3,4,0,,,Peralihan
+2016-06-04,Tanggamus,20,14.5,4,0,6.0,2016.0,Musim Kemarau
+,Pesisir Barat,35,11.9,2,23,,,Peralihan
+,Tanggamus,125,107.9,67,589,,,Peralihan
+,Way Kanan,107,58.8,19,206,,,Peralihan
+,Lampung Timur,15,9.5,2,0,,,Peralihan
+,Lampung Utara,246,981.3,72,10060,,,Peralihan
+,Pesisir Barat,26,13.8,4,0,,,Peralihan
+,Lampung Barat,104,16.0,10,94,,,Peralihan
+,Lampung Selatan,111,74.9,11,129,,,Peralihan
+2016-08-12,Lampung Barat,47,34.3,20,0,8.0,2016.0,Musim Kemarau
+,Pesisir Barat,33,5.8,2,10,,,Peralihan
+,Tulang Bawang,30,10.3,4,0,,,Peralihan
+,Pringsewu,143,166.3,46,1667,,,Peralihan
+,Tanggamus,16,11.6,2,0,,,Peralihan
+2017-08-03,Lampung Barat,84,76.4,5,96,8.0,2017.0,Musim Kemarau
+2017-09-03,Lampung Selatan,38,11.5,3,0,9.0,2017.0,Musim Kemarau
+,Pesisir Barat,15,7.4,4,0,,,Peralihan
+,Bandar Lampung,18,5.9,3,0,,,Peralihan
+,Mesuji,29,10.0,5,0,,,Peralihan
+2017-02-04,Tulang Bawang,283,669.2,64,10588,2.0,2017.0,Musim Hujan
+,Lampung Tengah,14,13.1,4,0,,,Peralihan
+,Pesawaran,17,8.8,2,0,,,Peralihan
+,Pringsewu,98,54.7,10,357,,,Peralihan
+2017-03-11,Lampung Barat,31,3.4,4,0,3.0,2017.0,Musim Hujan
+2017-06-11,Lampung Timur,23,4.7,4,0,6.0,2017.0,Musim Kemarau
+2017-12-11,Tanggamus,12,10.2,2,0,12.0,2017.0,Musim Hujan
+,Lampung Tengah,12,4.1,3,0,,,Peralihan
+,Mesuji,103,40.7,12,201,,,Peralihan
+,Tulang Bawang,89,74.8,15,119,,,Peralihan
+,Tulang Bawang Barat,36,11.9,5,0,,,Peralihan
+2017-02-12,Metro,25,3.9,2,0,2.0,2017.0,Musim Hujan
+2017-12-12,Tanggamus,15,9.6,3,0,12.0,2017.0,Musim Hujan
+,Way Kanan,18,14.2,3,0,,,Peralihan
+2018-06-01,Lampung Utara,119,58.0,17,427,6.0,2018.0,Musim Kemarau
+,Mesuji,94,52.0,15,308,,,Peralihan
+,Metro,108,18.8,7,130,,,Peralihan
+2018-08-03,Mesuji,14,3.5,3,0,8.0,2018.0,Musim Kemarau
+2018-10-03,Pesisir Barat,24,5.2,4,0,10.0,2018.0,Peralihan
+2018-10-04,Pringsewu,17,10.1,3,0,10.0,2018.0,Peralihan
+,Lampung Timur,105,25.6,20,91,,,Peralihan
+2018-11-09,Way Kanan,40,9.0,5,0,11.0,2018.0,Peralihan
+,Pesisir Barat,31,8.1,2,0,,,Peralihan
+,Lampung Tengah,27,9.5,5,0,,,Peralihan
+2018-02-11,Lampung Utara,10,10.3,2,0,2.0,2018.0,Musim Hujan
+2018-09-11,Tulang Bawang Barat,34,14.9,4,6,9.0,2018.0,Musim Kemarau
+,Tulang Bawang Barat,36,6.7,3,0,,,Peralihan
+,Bandar Lampung,262,809.0,53,20005,,,Peralihan
+2019-04-01,Pesisir Barat,66,72.3,19,307,4.0,2019.0,Peralihan
+,Tulang Bawang,21,4.8,3,0,,,Peralihan
+2019-10-02,Metro,102,23.8,15,113,10.0,2019.0,Peralihan
+,Pesawaran,39,1.7,3,0,,,Peralihan
+,Bandar Lampung,32,14.1,4,0,,,Peralihan
+,Metro,33,4.7,3,0,,,Peralihan
+,Pringsewu,11,13.1,4,0,,,Peralihan
+,Lampung Tengah,25,12.7,3,0,,,Peralihan
+,Pesawaran,30,5.9,4,0,,,Peralihan
+2019-10-10,Lampung Selatan,33,10.4,5,0,10.0,2019.0,Peralihan
+,Lampung Timur,21,10.5,2,0,,,Peralihan
+,Pesisir Barat,32,14.7,4,0,,,Peralihan
+,Tulang Bawang,189,586.5,49,8101,,,Peralihan
+,Pesawaran,20,9.0,5,0,,,Peralihan
+,Pesisir Barat,30,1.4,3,0,,,Peralihan
+2020-09-02,Lampung Timur,72,71.8,16,296,9.0,2020.0,Musim Kemarau
+2020-01-03,Tanggamus,14,3.6,2,0,1.0,2020.0,Musim Hujan
+2020-08-03,Lampung Selatan,27,13.2,4,0,8.0,2020.0,Musim Kemarau
+,Mesuji,25,13.5,2,0,,,Peralihan
+2020-04-04,Bandar Lampung,275,472.4,70,5256,4.0,2020.0,Peralihan
+,Pringsewu,22,5.3,4,0,,,Peralihan
+,Lampung Timur,55,17.1,5,33,,,Peralihan
+,Mesuji,15,5.8,2,0,,,Peralihan
+,Bandar Lampung,137,92.0,34,1112,,,Peralihan
+2020-03-12,Lampung Selatan,30,11.0,2,0,3.0,2020.0,Musim Hujan
+2020-07-12,Mesuji,37,4.7,5,0,7.0,2020.0,Musim Kemarau
+,Pesisir Barat,61,34.6,8,89,,,Peralihan
+,Tanggamus,32,2.9,3,0,,,Peralihan
+,Lampung Tengah,40,66.9,7,70,,,Peralihan
+,Lampung Timur,31,6.0,3,0,,,Peralihan
+2021-06-03,Lampung Utara,13,9.2,3,0,6.0,2021.0,Musim Kemarau
+,Tanggamus,25,6.6,4,0,,,Peralihan
+2021-02-04,Lampung Selatan,58,53.1,16,187,2.0,2021.0,Musim Hujan
+2021-12-04,Tulang Bawang Barat,287,517.0,47,7759,12.0,2021.0,Musim Hujan
+,Tulang Bawang,35,1.9,2,0,,,Peralihan
+2021-07-10,Tanggamus,27,5.3,4,0,7.0,2021.0,Musim Kemarau
+,Lampung Tengah,40,8.3,4,11,,,Peralihan
+,Tulang Bawang Barat,27,13.1,5,0,,,Peralihan
+,Metro,23,12.3,5,0,,,Peralihan
+2021-05-12,Pringsewu,33,11.5,4,14,5.0,2021.0,Peralihan
+,Lampung Utara,29,8.3,4,11,,,Peralihan
+,Pesisir Barat,19,14.4,3,0,,,Peralihan
+,Way Kanan,10,10.3,5,0,,,Peralihan
+2022-08-01,Way Kanan,16,2.5,3,0,8.0,2022.0,Musim Kemarau
+,Lampung Timur,101,64.7,13,287,,,Peralihan
+,Lampung Utara,13,2.1,4,0,,,Peralihan
+,Mesuji,24,14.7,5,0,,,Peralihan
+2022-06-02,Tulang Bawang Barat,42,27.8,14,0,6.0,2022.0,Musim Kemarau
+2022-11-02,Lampung Selatan,38,7.0,2,0,11.0,2022.0,Peralihan
+2022-12-02,Lampung Tengah,13,5.2,4,0,12.0,2022.0,Musim Hujan
+,Tulang Bawang Barat,38,5.4,2,0,,,Peralihan
+2022-01-03,Lampung Utara,282,499.9,50,9538,1.0,2022.0,Musim Hujan
+2022-12-04,Lampung Selatan,115,79.4,7,254,12.0,2022.0,Musim Hujan
+2022-08-10,Lampung Barat,21,10.8,2,0,8.0,2022.0,Musim Kemarau
+2022-06-12,Metro,19,5.8,3,0,6.0,2022.0,Musim Kemarau
+,Tanggamus,22,10.3,5,0,,,Peralihan
+,Metro,36,13.5,4,0,,,Peralihan
+,Lampung Selatan,160,437.6,38,4306,,,Peralihan
+,Pringsewu,26,1.0,4,0,,,Peralihan
+,Pringsewu,43,78.1,20,56,,,Peralihan
+,Pesawaran,29,9.4,2,0,,,Peralihan
+,Tulang Bawang,192,705.5,51,8992,,,Peralihan
+2023-02-03,Tulang Bawang,30,7.9,4,0,2.0,2023.0,Musim Hujan
+2023-09-04,Lampung Timur,57,24.4,17,22,9.0,2023.0,Musim Kemarau
+,Way Kanan,33,11.0,3,0,,,Peralihan
+,Lampung Utara,20,9.7,5,0,,,Peralihan
+,Pringsewu,28,4.6,2,0,,,Peralihan
+2023-04-12,Lampung Tengah,10,1.2,4,0,4.0,2023.0,Peralihan
+,Pringsewu,122,879.7,66,4733,,,Peralihan
+,Tulang Bawang Barat,231,218.9,51,2786,,,Peralihan
+2024-12-01,Tulang Bawang Barat,38,3.8,5,0,12.0,2024.0,Musim Hujan
+,Bandar Lampung,25,6.2,4,0,,,Peralihan
+,Lampung Barat,20,1.6,3,0,,,Peralihan
+,Pringsewu,90,70.0,7,450,,,Peralihan
+,Bandar Lampung,53,37.4,18,131,,,Peralihan
+2024-03-02,Lampung Timur,16,11.0,2,0,3.0,2024.0,Musim Hujan
+,Pesisir Barat,37,13.2,2,0,,,Peralihan
+,Tulang Bawang Barat,130,317.6,44,2380,,,Peralihan
+2024-04-03,Lampung Timur,227,737.3,67,15691,4.0,2024.0,Peralihan
+2024-09-03,Pringsewu,17,8.8,3,0,9.0,2024.0,Musim Kemarau
+,Lampung Barat,42,55.2,14,132,,,Peralihan
+,Lampung Selatan,15,5.1,3,0,,,Peralihan
+,Tanggamus,24,2.2,4,0,,,Peralihan
+2024-01-10,Lampung Utara,85,24.5,20,105,1.0,2024.0,Musim Hujan
+,Lampung Tengah,18,7.7,4,0,,,Peralihan
+2024-04-11,Pringsewu,56,48.3,13,50,4.0,2024.0,Peralihan
+2024-07-11,Tulang Bawang Barat,19,3.4,5,0,7.0,2024.0,Musim Kemarau
+2024-11-11,Lampung Barat,18,10.5,4,0,11.0,2024.0,Peralihan
+,Pesisir Barat,27,7.4,5,0,,,Peralihan
+2024-08-12,Way Kanan,32,4.0,5,0,8.0,2024.0,Musim Kemarau
+,Lampung Utara,226,189.3,56,2029,,,Peralihan
+2025-01-01,Pesawaran,39,5.5,3,0,1.0,2025.0,Musim Hujan
+2025-09-01,Metro,17,5.4,4,0,9.0,2025.0,Musim Kemarau
+,Tanggamus,281,785.3,59,19256,,,Peralihan
+,Lampung Tengah,32,2.2,4,0,,,Peralihan
+,Lampung Utara,80,27.8,18,52,,,Peralihan

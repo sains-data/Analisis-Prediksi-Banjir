@@ -1,6 +1,6 @@
-[2025-05-26T05:27:48.853+0000] {processor.py:186} INFO - Started process (PID=1124) to work on /opt/airflow/dags/lampung_data_quality_monitoring.py
-[2025-05-26T05:27:48.855+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/lampung_data_quality_monitoring.py for tasks to queue
-[2025-05-26T05:27:48.863+0000] {logging_mixin.py:190} INFO - [2025-05-26T05:27:48.862+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/lampung_data_quality_monitoring.py
-[2025-05-26T05:27:50.448+0000] {processor.py:925} INFO - DAG(s) 'lampung_data_quality_monitoring' retrieved from /opt/airflow/dags/lampung_data_quality_monitoring.py
-[2025-05-26T05:27:50.487+0000] {logging_mixin.py:190} INFO - [2025-05-26T05:27:50.486+0000] {dag.py:3239} INFO - Sync 1 DAGs
-[2025-05-26T05:27:50.661+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/lampung_data_quality_monitoring.py took 1.936 seconds
+[2025-05-26T10:02:17.539+0000] {processor.py:186} INFO - Started process (PID=699) to work on /opt/airflow/dags/lampung_data_quality_monitoring.py
+[2025-05-26T10:02:17.542+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/lampung_data_quality_monitoring.py for tasks to queue
+[2025-05-26T10:02:17.551+0000] {logging_mixin.py:190} INFO - [2025-05-26T10:02:17.549+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/lampung_data_quality_monitoring.py
+[2025-05-26T10:02:19.267+0000] {processor.py:925} INFO - DAG(s) 'lampung_data_quality_monitoring' retrieved from /opt/airflow/dags/lampung_data_quality_monitoring.py
+[2025-05-26T10:02:19.443+0000] {logging_mixin.py:190} INFO - [2025-05-26T10:02:19.442+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-26T10:02:19.749+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/lampung_data_quality_monitoring.py took 2.228 seconds
