@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+    <!-- Basic Derby Configuration (Minimal Settings) -->
+    <property>
+        <name>javax.jdo.option.ConnectionURL</name>
+        <value>jdbc:derby:;databaseName=metastore_db;create=true</value>
+        <description>JDBC connect string for Derby metastore (uses default location)</description>
+    </property>
+    
+    <property>
+        <name>javax.jdo.option.ConnectionDriverName</name>
+        <value>org.apache.derby.jdbc.EmbeddedDriver</value>
+        <description>Driver class name for Derby metastore</description>
+    </property>
+    
+    <property>
+        <name>javax.jdo.option.ConnectionUserName</name>
+        <value>APP</value>
+        <description>Username to use against metastore database</description>
+    </property>
+    
+    <property>
+        <name>javax.jdo.option.ConnectionPassword</name>
+        <value>mine</value>
+        <description>Password to use against metastore database</description>
+    </property>
+    
+    <!-- Metastore Configuration -->
+    <property>
+        <name>hive.metastore.warehouse.dir</name>
+        <value>/tmp/hive</value>
+        <description>Location of default database for the warehouse</description>
+    </property>
+    
+    <property>
+        <name>hive.metastore.uris</name>
+        <value></value>
+        <description>Empty for embedded metastore</description>
+    </property>
+    
+    <!-- HiveServer2 Configuration -->
+    <property>
+        <name>hive.server2.thrift.bind.host</name>
+        <value>0.0.0.0</value>
+        <description>Bind host on which to run the HiveServer2 Thrift service</description>
+    </property>
+    
+    <property>
+        <name>hive.server2.thrift.port</name>
+        <value>10000</value>
+        <description>Port number of HiveServer2 Thrift interface</description>
+    </property>
+    
+    <property>
+        <name>hive.server2.webui.host</name>
+        <value>0.0.0.0</value>
+        <description>Host interface for HiveServer2 Web UI</description>
+    </property>
+    
+    <property>
+        <name>hive.server2.webui.port</name>
+        <value>10002</value>
+        <description>Port for HiveServer2 Web UI</description>
+    </property>
+    
+    <!-- Disable security for simplicity -->
+    <property>
+        <name>hive.server2.authentication</name>
+        <value>NONE</value>
+        <description>HiveServer2 authentication method</description>
+    </property>
+    
+    <property>
+        <name>hive.security.authorization.enabled</name>
+        <value>false</value>
+        <description>Enable or disable the Hive authorization</description>
+    </property>
+    
+    <!-- Disable schema verification -->
+    <property>
+        <name>hive.metastore.schema.verification</name>
+        <value>false</value>
+        <description>Enforce metastore schema version consistency</description>
+    </property>
+    
+    <!-- Auto-create schema objects -->
+    <property>
+        <name>datanucleus.autoCreateSchema</name>
+        <value>true</value>
+        <description>Auto create schema for Derby database</description>
+    </property>
+    
+    <property>
+        <name>datanucleus.autoCreateTables</name>
+        <value>true</value>
+        <description>Auto create tables for Derby database</description>
+    </property>
+    
+    <property>
+        <name>datanucleus.autoCreateColumns</name>
+        <value>true</value>
+        <description>Auto create columns for Derby database</description>
+    </property>
+    
+    <property>
+        <name>datanucleus.fixedDatastore</name>
+        <value>false</value>
+        <description>Allow datastore modifications</description>
+    </property>
+</configuration>

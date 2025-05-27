@@ -1,0 +1,16 @@
+feature,importance
+flood_frequency,0.24422619047619049
+temperature_mean_Peralihan,0.11964285714285713
+humidity_mean_Peralihan,0.11816468253968257
+wind_speed_mean_Musim_Hujan,0.08868015873015875
+slope_std,0.06635912698412698
+temperature_mean_Musim_Kemarau,0.059960317460317464
+slope_max,0.046655555555555554
+elevation_max,0.04544501133786848
+rainfall_std_Peralihan,0.04163095238095238
+rainfall_sum_Peralihan,0.038358730158730155
+wind_speed_max_Musim_Hujan,0.032813492063492065
+rainfall_mean_Peralihan,0.030267857142857138
+elevation_risk_score,0.026693877551020408
+topographic_vulnerability,0.025228174603174603
+temperature_mean_Musim_Hujan,0.01587301587301587

@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1d9945b5e4490e5202d52081ae32fc2f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+        <div style="position: fixed; 
+                    bottom: 50px; left: 50px; width: 150px; height: 120px; 
+                    background-color: white; border:2px solid grey; z-index:9999; 
+                    font-size:14px; padding: 10px">
+        <p><b>Flood Risk Categories</b></p>
+        <p><i class="fa fa-circle" style="color:red"></i> Very High (>80%)</p>
+        <p><i class="fa fa-circle" style="color:orange"></i> High (60-80%)</p>
+        <p><i class="fa fa-circle" style="color:yellow"></i> Medium (30-60%)</p>
+        <p><i class="fa fa-circle" style="color:green"></i> Low (<30%)</p>
+        </div>
+        
+    
+            <div class="folium-map" id="map_1d9945b5e4490e5202d52081ae32fc2f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1d9945b5e4490e5202d52081ae32fc2f = L.map(
+                "map_1d9945b5e4490e5202d52081ae32fc2f",
+                {
+                    center: [-5.0, 105.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_557e34700c10673ef1b1d0d32d3fe560 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_557e34700c10673ef1b1d0d32d3fe560.addTo(map_1d9945b5e4490e5202d52081ae32fc2f);
+        
+    
+            var circle_marker_1e58bc782babe3da88ab32667aa0f9fc = L.circleMarker(
+                [-5.4292, 105.2619],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.000000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_1d9945b5e4490e5202d52081ae32fc2f);
+        
+    
+        var popup_12fd1a31273125bf6c3bf9a567cca5ec = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_be96ad06963fce7dcd3ad973df3a3e79 = $(`<div id="html_be96ad06963fce7dcd3ad973df3a3e79" style="width: 100.0%; height: 100.0%;"><b>Bandar Lampung</b><br>Risk Probability: 14.0%<br>Category: Low<br>Radius: 7.0</div>`)[0];
+                popup_12fd1a31273125bf6c3bf9a567cca5ec.setContent(html_be96ad06963fce7dcd3ad973df3a3e79);
+            
+        
+
+        circle_marker_1e58bc782babe3da88ab32667aa0f9fc.bindPopup(popup_12fd1a31273125bf6c3bf9a567cca5ec)
+        ;
+
+        
+    
+    
+            circle_marker_1e58bc782babe3da88ab32667aa0f9fc.bindTooltip(
+                `<div>
+                     Bandar Lampung: 14.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_38ad3e45e59e3d9da490541c4d349d43 = L.circleMarker(
+                [-5.1, 104.2833],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.5, "stroke": true, "weight": 3}
+            ).addTo(map_1d9945b5e4490e5202d52081ae32fc2f);
+        
+    
+        var popup_61bb2ff36190866dc4bb42b8f86e6dd4 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_1a5362c72d80048a1f91b74ff32b8967 = $(`<div id="html_1a5362c72d80048a1f91b74ff32b8967" style="width: 100.0%; height: 100.0%;"><b>Lampung Barat</b><br>Risk Probability: 25.0%<br>Category: Low<br>Radius: 12.5</div>`)[0];
+                popup_61bb2ff36190866dc4bb42b8f86e6dd4.setContent(html_1a5362c72d80048a1f91b74ff32b8967);
+            
+        
+
+        circle_marker_38ad3e45e59e3d9da490541c4d349d43.bindPopup(popup_61bb2ff36190866dc4bb42b8f86e6dd4)
+        ;
+
+        
+    
+    
+            circle_marker_38ad3e45e59e3d9da490541c4d349d43.bindTooltip(
+                `<div>
+                     Lampung Barat: 25.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d4630fc17b9a3e357a042026d97f8f26 = L.circleMarker(
+                [-5.7892, 105.4836],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1d9945b5e4490e5202d52081ae32fc2f);
+        
+    
+        var popup_b320f52fe4d802dd397115049bd5118d = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_3870a38d361dc3eb9bcaa02145ed95b9 = $(`<div id="html_3870a38d361dc3eb9bcaa02145ed95b9" style="width: 100.0%; height: 100.0%;"><b>Lampung Selatan</b><br>Risk Probability: 4.0%<br>Category: Low<br>Radius: 5.0</div>`)[0];
+                popup_b320f52fe4d802dd397115049bd5118d.setContent(html_3870a38d361dc3eb9bcaa02145ed95b9);
+            
+        
+
+        circle_marker_d4630fc17b9a3e357a042026d97f8f26.bindPopup(popup_b320f52fe4d802dd397115049bd5118d)
+        ;
+
+        
+    
+    
+            circle_marker_d4630fc17b9a3e357a042026d97f8f26.bindTooltip(
+                `<div>
+                     Lampung Selatan: 4.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ac3b69bf0e651a4269404cd85686bc1a = L.circleMarker(
+                [-4.8258, 105.3067],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 36.0, "stroke": true, "weight": 3}
+            ).addTo(map_1d9945b5e4490e5202d52081ae32fc2f);
+        
+    
+        var popup_6a47e10265bfd618425e7723a7787f54 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_96687a961fa58e5db8e2b7763d584787 = $(`<div id="html_96687a961fa58e5db8e2b7763d584787" style="width: 100.0%; height: 100.0%;"><b>Lampung Tengah</b><br>Risk Probability: 72.0%<br>Category: High<br>Radius: 36.0</div>`)[0];
+                popup_6a47e10265bfd618425e7723a7787f54.setContent(html_96687a961fa58e5db8e2b7763d584787);
+            
+        
+
+        circle_marker_ac3b69bf0e651a4269404cd85686bc1a.bindPopup(popup_6a47e10265bfd618425e7723a7787f54)
+        ;
+
+        
+    
+    
+            circle_marker_ac3b69bf0e651a4269404cd85686bc1a.bindTooltip(
+                `<div>
+                     Lampung Tengah: 72.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_37c9948da54eebec91b5b6885b1b5a82 = L.circleMarker(
+                [-5.0947, 105.8406],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.5, "stroke": true, "weight": 3}
+            ).addTo(map_1d9945b5e4490e5202d52081ae32fc2f);
+        
+    
+        var popup_90b91d5445ac693a081687a30245a132 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_fe11d5e3963bb35fb54a9c3ffc8ffb5b = $(`<div id="html_fe11d5e3963bb35fb54a9c3ffc8ffb5b" style="width: 100.0%; height: 100.0%;"><b>Lampung Timur</b><br>Risk Probability: 21.0%<br>Category: Low<br>Radius: 10.5</div>`)[0];
+                popup_90b91d5445ac693a081687a30245a132.setContent(html_fe11d5e3963bb35fb54a9c3ffc8ffb5b);
+            
+        
+
+        circle_marker_37c9948da54eebec91b5b6885b1b5a82.bindPopup(popup_90b91d5445ac693a081687a30245a132)
+        ;
+
+        
+    
+    
+            circle_marker_37c9948da54eebec91b5b6885b1b5a82.bindTooltip(
+                `<div>
+                     Lampung Timur: 21.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1699a7bae6c0d805916e0d5ebdc2da4d = L.circleMarker(
+                [-4.1833, 104.6667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 44.0, "stroke": true, "weight": 3}
+            ).addTo(map_1d9945b5e4490e5202d52081ae32fc2f);
+        
+    
+        var popup_7119e03af959ef567cb361ce9349bf97 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_374dc626e097c9b85a6671b9fe75bb67 = $(`<div id="html_374dc626e097c9b85a6671b9fe75bb67" style="width: 100.0%; height: 100.0%;"><b>Lampung Utara</b><br>Risk Probability: 88.0%<br>Category: Very High<br>Radius: 44.0</div>`)[0];
+                popup_7119e03af959ef567cb361ce9349bf97.setContent(html_374dc626e097c9b85a6671b9fe75bb67);
+            
+        
+
+        circle_marker_1699a7bae6c0d805916e0d5ebdc2da4d.bindPopup(popup_7119e03af959ef567cb361ce9349bf97)
+        ;
+
+        
+    
+    
+            circle_marker_1699a7bae6c0d805916e0d5ebdc2da4d.bindTooltip(
+                `<div>
+                     Lampung Utara: 88.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c113086058eff3c997b8f2ba7ebfa13f = L.circleMarker(
+                [-3.4667, 105.8333],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.0, "stroke": true, "weight": 3}
+            ).addTo(map_1d9945b5e4490e5202d52081ae32fc2f);
+        
+    
+        var popup_6835a9ea02674ad02e47155121011a4a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_bf91dcfeef2d2058de86639c60561441 = $(`<div id="html_bf91dcfeef2d2058de86639c60561441" style="width: 100.0%; height: 100.0%;"><b>Mesuji</b><br>Risk Probability: 18.0%<br>Category: Low<br>Radius: 9.0</div>`)[0];
+                popup_6835a9ea02674ad02e47155121011a4a.setContent(html_bf91dcfeef2d2058de86639c60561441);
+            
+        
+
+        circle_marker_c113086058eff3c997b8f2ba7ebfa13f.bindPopup(popup_6835a9ea02674ad02e47155121011a4a)
+        ;
+
+        
+    
+    
+            circle_marker_c113086058eff3c997b8f2ba7ebfa13f.bindTooltip(
+                `<div>
+                     Mesuji: 18.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_154f21a62351af32f3f96b2b83921e79 = L.circleMarker(
+                [-5.113, 105.3067],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.000000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_1d9945b5e4490e5202d52081ae32fc2f);
+        
+    
+        var popup_f950cdf0a4c03eeccefc2f53995286ad = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_77d18e042b37a14f90cd08f4c6cd1868 = $(`<div id="html_77d18e042b37a14f90cd08f4c6cd1868" style="width: 100.0%; height: 100.0%;"><b>Metro</b><br>Risk Probability: 14.0%<br>Category: Low<br>Radius: 7.0</div>`)[0];
+                popup_f950cdf0a4c03eeccefc2f53995286ad.setContent(html_77d18e042b37a14f90cd08f4c6cd1868);
+            
+        
+
+        circle_marker_154f21a62351af32f3f96b2b83921e79.bindPopup(popup_f950cdf0a4c03eeccefc2f53995286ad)
+        ;
+
+        
+    
+    
+            circle_marker_154f21a62351af32f3f96b2b83921e79.bindTooltip(
+                `<div>
+                     Metro: 14.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a30cb93d22b98ce682c3a180037f9df3 = L.circleMarker(
+                [-5.5333, 105.0667],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.000000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_1d9945b5e4490e5202d52081ae32fc2f);
+        
+    
+        var popup_a8b80b8e3eb10f124b073c6fce5d3728 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_c595ba10db5b0f348207f15f063a54d2 = $(`<div id="html_c595ba10db5b0f348207f15f063a54d2" style="width: 100.0%; height: 100.0%;"><b>Pesawaran</b><br>Risk Probability: 14.0%<br>Category: Low<br>Radius: 7.0</div>`)[0];
+                popup_a8b80b8e3eb10f124b073c6fce5d3728.setContent(html_c595ba10db5b0f348207f15f063a54d2);
+            
+        
+
+        circle_marker_a30cb93d22b98ce682c3a180037f9df3.bindPopup(popup_a8b80b8e3eb10f124b073c6fce5d3728)
+        ;
+
+        
+    
+    
+            circle_marker_a30cb93d22b98ce682c3a180037f9df3.bindTooltip(
+                `<div>
+                     Pesawaran: 14.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a881a318aaef3649b12d603cc54a1e73 = L.circleMarker(
+                [-5.2333, 104.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 46.5, "stroke": true, "weight": 3}
+            ).addTo(map_1d9945b5e4490e5202d52081ae32fc2f);
+        
+    
+        var popup_4d6fd209d6aee7a197b1fb5de76eae2a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_eace0961999841ab1267434799fc153e = $(`<div id="html_eace0961999841ab1267434799fc153e" style="width: 100.0%; height: 100.0%;"><b>Pesisir Barat</b><br>Risk Probability: 93.0%<br>Category: Very High<br>Radius: 46.5</div>`)[0];
+                popup_4d6fd209d6aee7a197b1fb5de76eae2a.setContent(html_eace0961999841ab1267434799fc153e);
+            
+        
+
+        circle_marker_a881a318aaef3649b12d603cc54a1e73.bindPopup(popup_4d6fd209d6aee7a197b1fb5de76eae2a)
+        ;
+
+        
+    
+    
+            circle_marker_a881a318aaef3649b12d603cc54a1e73.bindTooltip(
+                `<div>
+                     Pesisir Barat: 93.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_93a97965ac6933ffd2c9da7db3ccda3b = L.circleMarker(
+                [-5.3583, 104.975],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 41.0, "stroke": true, "weight": 3}
+            ).addTo(map_1d9945b5e4490e5202d52081ae32fc2f);
+        
+    
+        var popup_7f22f450a3e7b7373cd76267821111ab = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_89ea72d950296b208cbea9646eebe4f3 = $(`<div id="html_89ea72d950296b208cbea9646eebe4f3" style="width: 100.0%; height: 100.0%;"><b>Pringsewu</b><br>Risk Probability: 82.0%<br>Category: Very High<br>Radius: 41.0</div>`)[0];
+                popup_7f22f450a3e7b7373cd76267821111ab.setContent(html_89ea72d950296b208cbea9646eebe4f3);
+            
+        
+
+        circle_marker_93a97965ac6933ffd2c9da7db3ccda3b.bindPopup(popup_7f22f450a3e7b7373cd76267821111ab)
+        ;
+
+        
+    
+    
+            circle_marker_93a97965ac6933ffd2c9da7db3ccda3b.bindTooltip(
+                `<div>
+                     Pringsewu: 82.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cc035368b388eb2cc7af72afa979c4bf = L.circleMarker(
+                [-5.4667, 104.6333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 41.5, "stroke": true, "weight": 3}
+            ).addTo(map_1d9945b5e4490e5202d52081ae32fc2f);
+        
+    
+        var popup_966a60bdcba7da395e3d94ab905dc1ae = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_20c81e1e4e7309657a871f7fda07a91b = $(`<div id="html_20c81e1e4e7309657a871f7fda07a91b" style="width: 100.0%; height: 100.0%;"><b>Tanggamus</b><br>Risk Probability: 83.0%<br>Category: Very High<br>Radius: 41.5</div>`)[0];
+                popup_966a60bdcba7da395e3d94ab905dc1ae.setContent(html_20c81e1e4e7309657a871f7fda07a91b);
+            
+        
+
+        circle_marker_cc035368b388eb2cc7af72afa979c4bf.bindPopup(popup_966a60bdcba7da395e3d94ab905dc1ae)
+        ;
+
+        
+    
+    
+            circle_marker_cc035368b388eb2cc7af72afa979c4bf.bindTooltip(
+                `<div>
+                     Tanggamus: 83.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ffe98b63d960094a0d06c663f8aceef6 = L.circleMarker(
+                [-4.0667, 105.6333],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(map_1d9945b5e4490e5202d52081ae32fc2f);
+        
+    
+        var popup_8a621fc1308d1ae27d69e9f2cc8e8ab3 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_f7980bb6fb9321674f2f759ef40e8db2 = $(`<div id="html_f7980bb6fb9321674f2f759ef40e8db2" style="width: 100.0%; height: 100.0%;"><b>Tulang Bawang</b><br>Risk Probability: 16.0%<br>Category: Low<br>Radius: 8.0</div>`)[0];
+                popup_8a621fc1308d1ae27d69e9f2cc8e8ab3.setContent(html_f7980bb6fb9321674f2f759ef40e8db2);
+            
+        
+
+        circle_marker_ffe98b63d960094a0d06c663f8aceef6.bindPopup(popup_8a621fc1308d1ae27d69e9f2cc8e8ab3)
+        ;
+
+        
+    
+    
+            circle_marker_ffe98b63d960094a0d06c663f8aceef6.bindTooltip(
+                `<div>
+                     Tulang Bawang: 16.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3f12f3922c2c23211fccd0339cdfcc6e = L.circleMarker(
+                [-4.4167, 105.1833],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 32.0, "stroke": true, "weight": 3}
+            ).addTo(map_1d9945b5e4490e5202d52081ae32fc2f);
+        
+    
+        var popup_ed3bfc33887b55058cc0d72db5cdd475 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_4d4085ef4cfca4ad662a0ef80b5bbfce = $(`<div id="html_4d4085ef4cfca4ad662a0ef80b5bbfce" style="width: 100.0%; height: 100.0%;"><b>Tulang Bawang Barat</b><br>Risk Probability: 64.0%<br>Category: High<br>Radius: 32.0</div>`)[0];
+                popup_ed3bfc33887b55058cc0d72db5cdd475.setContent(html_4d4085ef4cfca4ad662a0ef80b5bbfce);
+            
+        
+
+        circle_marker_3f12f3922c2c23211fccd0339cdfcc6e.bindPopup(popup_ed3bfc33887b55058cc0d72db5cdd475)
+        ;
+
+        
+    
+    
+            circle_marker_3f12f3922c2c23211fccd0339cdfcc6e.bindTooltip(
+                `<div>
+                     Tulang Bawang Barat: 64.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f6c7ce7e85000960fc75df3f4e445a4d = L.circleMarker(
+                [-4.2333, 104.5833],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.000000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_1d9945b5e4490e5202d52081ae32fc2f);
+        
+    
+        var popup_b2c5f6a5734af11db0faf5d102404a00 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_44b9a087bfc854b2a8090d46ec7073f7 = $(`<div id="html_44b9a087bfc854b2a8090d46ec7073f7" style="width: 100.0%; height: 100.0%;"><b>Way Kanan</b><br>Risk Probability: 14.0%<br>Category: Low<br>Radius: 7.0</div>`)[0];
+                popup_b2c5f6a5734af11db0faf5d102404a00.setContent(html_44b9a087bfc854b2a8090d46ec7073f7);
+            
+        
+
+        circle_marker_f6c7ce7e85000960fc75df3f4e445a4d.bindPopup(popup_b2c5f6a5734af11db0faf5d102404a00)
+        ;
+
+        
+    
+    
+            circle_marker_f6c7ce7e85000960fc75df3f4e445a4d.bindTooltip(
+                `<div>
+                     Way Kanan: 14.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

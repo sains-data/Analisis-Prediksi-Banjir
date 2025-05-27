@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+    <property>
+        <n>hbase.rootdir</n>
+        <value>hdfs://namenode:8020/hbase</value>
+    </property>
+    <property>
+        <n>hbase.cluster.distributed</n>
+        <value>true</value>
+    </property>
+    <property>
+        <n>hbase.zookeeper.quorum</n>
+        <value>zookeeper</value>
+    </property>
+    <property>
+        <n>hbase.zookeeper.property.clientPort</n>
+        <value>2181</value>
+    </property>
+    <property>
+        <n>hbase.master.port</n>
+        <value>16000</value>
+    </property>
+    <property>
+        <n>hbase.master.info.port</n>
+        <value>16010</value>
+    </property>
+</configuration>

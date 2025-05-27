@@ -1,0 +1,37 @@
+FROM ubuntu:24.04
+
+# Install dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    openjdk-11-jdk \
+    curl \
+    net-tools \
+    netcat-openbsd \
+    gnupg \
+    procps \
+    wget \
+    && rm -rf /var/lib/apt/lists/*
+
+# Set environment variables
+ENV HBASE_HOME=/opt/hbase
+ENV HBASE_VERSION=2.5.10
+ENV PATH=${PATH}:${HBASE_HOME}/bin
+
+# Copy HBase distribution
+COPY ./packages/hbase-2.5.10-bin.tar.gz /tmp/
+RUN tar -xzf /tmp/hbase-2.5.10-bin.tar.gz -C /opt/ && \
+    ln -s /opt/hbase-${HBASE_VERSION} ${HBASE_HOME} && \
+    rm /tmp/hbase-2.5.10-bin.tar.gz
+
+# Set up HBase configuration
+COPY docker/hbase/config/hbase-site.xml ${HBASE_HOME}/conf/
+COPY docker/hbase/config/hbase-env.sh ${HBASE_HOME}/conf/
+
+# Set up entrypoint script
+COPY docker/hbase/scripts/entrypoint-hbase-master.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+# Expose ports
+EXPOSE 16000 16010
+
+# Set entrypoint
+ENTRYPOINT ["/entrypoint.sh"]   

@@ -1,0 +1,12 @@
+# Python Requirements for Flood Analytics Pipeline
+# These are already included in the apache/spark Docker image
+
+# Core dependencies (included in Spark image)
+pyspark>=3.5.0
+pandas>=1.5.0
+numpy>=1.20.0
+
+# Optional dependencies for enhanced analytics
+# matplotlib>=3.5.0  # For visualization
+# seaborn>=0.11.0    # For statistical plots
+# scikit-learn>=1.0.0 # For machine learning

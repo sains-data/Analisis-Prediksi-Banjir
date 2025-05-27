@@ -1,0 +1,485 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+    <!-- ================================================================
+         HIVE 4.0.1 CONFIGURATION FOR FLOOD PREDICTION ANALYTICS
+         ================================================================ -->    <!-- Metastore Configuration (Using Derby Embedded Database) -->    <property><name>javax.jdo.option.ConnectionURL</name><value>jdbc:derby:;databaseName=/opt/hive/data/metastore/metastore_db;create=true</value>
+        <description>JDBC connect string for Derby metastore</description>
+    </property>
+    
+    <property>
+        <name>javax.jdo.option.ConnectionDriverName</name>
+        <value>org.apache.derby.jdbc.EmbeddedDriver</value>
+        <description>Driver class name for Derby metastore</description>
+    </property>
+    
+    <property>
+        <name>javax.jdo.option.ConnectionUserName</name>
+        <value>APP</value>
+        <description>Username to use against metastore database</description>
+    </property>
+      <property>
+        <name>javax.jdo.option.ConnectionPassword</name>
+        <value>mine</value>
+        <description>Password to use against metastore database</description>
+    </property>    <!-- Derby Connection Pool Settings -->
+    <property>
+        <name>datanucleus.connectionPoolingType</name>
+        <value>None</value>
+        <description>Disable connection pooling for Derby to avoid transaction issues</description>
+    </property>
+    
+    <property>
+        <name>datanucleus.connectionPool.maxIdle</name>
+        <value>0</value>
+        <description>Maximum number of idle connections</description>
+    </property>
+    
+    <property>
+        <name>datanucleus.connectionPool.maxActive</name>
+        <value>1</value>
+        <description>Maximum number of active connections</description>
+    </property>
+    
+    <property>
+        <name>datanucleus.autoCommitTxns</name>
+        <value>true</value>
+        <description>Auto commit transactions</description>
+    </property>
+    
+    <property>
+        <name>datanucleus.retainValues</name>
+        <value>true</value>
+        <description>Retain values after commit</description>
+    </property>    
+    <!-- Additional Derby-specific settings to prevent locking -->
+    <!-- Derby locking and timeout configurations -->
+    <property>
+        <name>datanucleus.connectionPool.testSQL</name>
+        <value>values(1)</value>
+        <description>SQL to test connections</description>
+    </property>
+      <property>
+        <name>datanucleus.rdbms.initializeColumnInfo</name>
+        <value>LAZY</value>
+        <description>Lazy initialization of column info</description>
+    </property>
+    
+    <!-- Additional Derby configuration to prevent locking -->
+    <property>
+        <name>datanucleus.connectionPool.testSQL</name>
+        <value>values(1)</value>
+        <description>SQL to test connections</description>
+    </property>
+    
+    <property>
+        <name>datanucleus.rdbms.stringLengthExceededAction</name>
+        <value>EXCEPTION</value>
+        <description>Action when string length exceeded</description>
+    </property>
+    
+    <property>
+        <name>datanucleus.identifier.case</name>
+        <value>PRESERVE</value>
+        <description>Preserve identifier case</description>
+    </property>
+    
+    <property>
+        <name>datanucleus.autoCreateConstraints</name>
+        <value>true</value>
+        <description>Auto create constraints</description>
+    </property>
+    
+    <property>
+        <name>datanucleus.validateTables</name>
+        <value>false</value>
+        <description>Do not validate tables</description>
+    </property>
+    
+    <property>
+        <name>datanucleus.validateColumns</name>
+        <value>false</value>
+        <description>Do not validate columns</description>
+    </property>
+    
+    <property>
+        <name>datanucleus.validateConstraints</name>
+        <value>false</value>
+        <description>Do not validate constraints</description>
+    </property>
+    
+      <property>
+        <name>hive.metastore.uris</name>
+        <value></value>
+        <description>Empty for embedded metastore</description>
+    </property>
+    
+    <property>
+        <name>hive.metastore.local</name>
+        <value>true</value>
+        <description>Use local embedded metastore</description>
+    </property>
+    
+    <property>
+        <name>hive.metastore.warehouse.dir</name>
+        <value>/user/hive/warehouse</value>
+        <description>Location of default database for the warehouse</description>
+    </property>
+    
+    <!-- HDFS Configuration -->
+    <property>
+        <name>fs.defaultFS</name>
+        <value>hdfs://namenode:8020</value>
+        <description>The name of the default file system</description>
+    </property>    <property>
+        <name>hive.metastore.schema.verification</name>
+        <value>false</value>
+        <description>Enforce metastore schema version consistency</description>
+    </property>
+    
+    <property>
+        <name>hive.metastore.schema.verification.record.version</name>
+        <value>false</value>
+        <description>Whether to record the schema version in the metastore</description>
+    </property>
+    
+    <property>
+        <name>datanucleus.autoCreateSchema</name>
+        <value>true</value>
+        <description>Auto create schema for Derby database</description>
+    </property>
+    
+    <property>
+        <name>datanucleus.autoCreateTables</name>
+        <value>true</value>
+        <description>Auto create tables for Derby database</description>
+    </property>
+    
+    <property>
+        <name>datanucleus.autoCreateColumns</name>
+        <value>true</value>
+        <description>Auto create columns for Derby database</description>
+    </property>
+    
+    <property>
+        <name>datanucleus.fixedDatastore</name>
+        <value>false</value>
+        <description>Allow datastore modifications</description>
+    </property>
+      <property>
+        <name>datanucleus.autoStartMechanism</name>
+        <value>SchemaTable</value>
+        <description>Auto start mechanism for schema creation</description>
+    </property>
+    
+    <!-- Derby Specific Configurations -->
+    <property>
+        <name>datanucleus.schema.autoCreateAll</name>
+        <value>true</value>
+        <description>Auto create all schema objects</description>
+    </property>
+    
+    <!-- Derby Lock and Timeout Configuration -->
+    <property>
+        <name>datanucleus.connectionPool.maxWait</name>
+        <value>10000</value>
+        <description>Max wait time for connection from pool</description>
+    </property>
+    
+    <property>
+        <name>datanucleus.rdbms.statementBatchLimit</name>
+        <value>1</value>
+        <description>Batch limit for Derby to avoid deadlocks</description>
+    </property>
+    
+    <property>
+        <name>datanucleus.rdbms.useUpdateLock</name>
+        <value>true</value>
+        <description>Use update locks in Derby</description>
+    </property>
+    
+    <property>
+        <name>hive.metastore.client.connect.retry.delay</name>
+        <value>5</value>
+        <description>Number of seconds to wait between metastore connection attempts</description>
+    </property>
+    
+    <property>
+        <name>hive.metastore.failure.retries</name>
+        <value>3</value>
+        <description>Number of retries upon failure of Thrift metastore calls</description>
+    </property>
+    
+    <property>
+        <name>datanucleus.transactionIsolation</name>
+        <value>read-committed</value>
+        <description>Transaction isolation level</description>
+    </property>
+    
+    <!-- HiveServer2 Configuration -->
+    <property>
+        <name>hive.server2.thrift.bind.host</name>
+        <value>0.0.0.0</value>
+        <description>Bind host on which to run the HiveServer2 Thrift service</description>
+    </property>
+    
+    <property>
+        <name>hive.server2.thrift.port</name>
+        <value>10000</value>
+        <description>Port number of HiveServer2 Thrift interface</description>
+    </property>
+    
+    <property>
+        <name>hive.server2.webui.host</name>
+        <value>0.0.0.0</value>
+        <description>Host interface for HiveServer2 Web UI</description>
+    </property>
+    
+    <property>
+        <name>hive.server2.webui.port</name>
+        <value>10002</value>
+        <description>Port for HiveServer2 Web UI</description>
+    </property>
+    
+    <!-- Authentication Configuration -->
+    <property>
+        <name>hive.server2.authentication</name>
+        <value>NONE</value>
+        <description>HiveServer2 authentication method</description>
+    </property>
+    
+    <property>
+        <name>hive.security.authorization.enabled</name>
+        <value>false</value>
+        <description>Enable or disable the Hive authorization</description>
+    </property>
+    
+    <!-- Execution Engine Configuration -->
+    <property>
+        <name>hive.execution.engine</name>
+        <value>mr</value>
+        <description>Execution engine for Hive: mr (MapReduce), tez, or spark</description>
+    </property>
+    
+    <property>
+        <name>hive.vectorized.execution.enabled</name>
+        <value>true</value>
+        <description>Enable vectorized query execution</description>
+    </property>
+    
+    <property>
+        <name>hive.vectorized.execution.reduce.enabled</name>
+        <value>true</value>
+        <description>Enable vectorized reduce side query execution</description>
+    </property>
+    
+    <!-- Memory Configuration -->
+    <property>
+        <name>hive.auto.convert.join</name>
+        <value>true</value>
+        <description>Whether Hive enables the optimization about converting common join into mapjoin</description>
+    </property>
+    
+    <property>
+        <name>hive.auto.convert.join.noconditionaltask.size</name>
+        <value>268435456</value>
+        <description>If the size of table is smaller than this, will convert to mapjoin (256MB)</description>
+    </property>
+    
+    <property>
+        <name>hive.mapjoin.smalltable.filesize</name>
+        <value>25000000</value>
+        <description>Size of a table that can be auto converted to mapjoin (25MB)</description>
+    </property>
+    
+    <!-- Performance Optimization -->
+    <property>
+        <name>hive.exec.dynamic.partition</name>
+        <value>true</value>
+        <description>Enable dynamic partitioning</description>
+    </property>
+    
+    <property>
+        <name>hive.exec.dynamic.partition.mode</name>
+        <value>nonstrict</value>
+        <description>Dynamic partitioning mode: strict or nonstrict</description>
+    </property>
+    
+    <property>
+        <name>hive.exec.max.dynamic.partitions</name>
+        <value>1000</value>
+        <description>Maximum number of dynamic partitions allowed per DML operation</description>
+    </property>
+    
+    <property>
+        <name>hive.exec.max.dynamic.partitions.pernode</name>
+        <value>100</value>
+        <description>Maximum number of dynamic partitions per node</description>
+    </property>
+    
+    <!-- Compression Configuration -->
+    <property>
+        <name>hive.exec.compress.output</name>
+        <value>true</value>
+        <description>Enable compression of query output</description>
+    </property>
+    
+    <property>
+        <name>hive.exec.compress.intermediate</name>
+        <value>true</value>
+        <description>Enable compression of intermediate map outputs</description>
+    </property>
+    
+    <property>
+        <name>mapred.output.compression.codec</name>
+        <value>org.apache.hadoop.io.compress.GzipCodec</value>
+        <description>Compression codec for map outputs</description>
+    </property>
+    
+    <!-- File Format Configuration -->
+    <property>
+        <name>hive.default.fileformat</name>
+        <value>ORC</value>
+        <description>Default file format for CREATE TABLE statement</description>
+    </property>
+    
+    <property>
+        <name>hive.default.fileformat.managed</name>
+        <value>ORC</value>
+        <description>Default file format for managed tables</description>
+    </property>
+    
+    <!-- ORC Configuration -->
+    <property>
+        <name>hive.exec.orc.default.stripe.size</name>
+        <value>67108864</value>
+        <description>Define the default ORC stripe size in bytes (64MB)</description>
+    </property>
+    
+    <property>
+        <name>hive.exec.orc.default.row.index.stride</name>
+        <value>10000</value>
+        <description>Define the default ORC row index stride</description>
+    </property>
+    
+    <property>
+        <name>hive.exec.orc.default.buffer.size</name>
+        <value>262144</value>
+        <description>Define the default ORC buffer size (256KB)</description>
+    </property>
+    
+    <!-- Statistics Configuration -->
+    <property>
+        <name>hive.stats.autogather</name>
+        <value>true</value>
+        <description>Enable automatic gathering of table statistics</description>
+    </property>
+    
+    <property>
+        <name>hive.compute.query.using.stats</name>
+        <value>true</value>
+        <description>Use column statistics to compute queries when possible</description>
+    </property>
+    
+    <!-- Cost-Based Optimizer -->
+    <property>
+        <name>hive.cbo.enable</name>
+        <value>true</value>
+        <description>Enable cost-based optimizer</description>
+    </property>
+    
+    <property>
+        <name>hive.stats.fetch.column.stats</name>
+        <value>true</value>
+        <description>Fetch column statistics</description>
+    </property>
+    
+    <property>
+        <name>hive.stats.fetch.partition.stats</name>
+        <value>true</value>
+        <description>Fetch partition statistics</description>
+    </property>
+    
+    <!-- LLAP Configuration (disabled for this setup) -->
+    <property>
+        <name>hive.llap.execution.mode</name>
+        <value>none</value>
+        <description>LLAP execution mode</description>
+    </property>
+      <!-- ACID Configuration (disabled for Derby compatibility) -->
+    <property>
+        <name>hive.support.concurrency</name>
+        <value>false</value>
+        <description>Disable concurrency support for Derby compatibility</description>
+    </property>
+    
+    <property>
+        <name>hive.enforce.bucketing</name>
+        <value>false</value>
+        <description>Disable bucketing enforcement</description>
+    </property>
+    
+    <property>
+        <name>hive.exec.dynamic.partition.mode</name>
+        <value>nonstrict</value>
+        <description>Dynamic partition mode</description>
+    </property>
+    
+    <property>
+        <name>hive.txn.manager</name>
+        <value>org.apache.hadoop.hive.ql.lockmgr.DummyTxnManager</value>
+        <description>Use dummy transaction manager for Derby</description>
+    </property>
+    
+    <property>
+        <name>hive.compactor.initiator.on</name>
+        <value>false</value>
+        <description>Disable compactor initiator</description>
+    </property>
+    
+    <property>
+        <name>hive.compactor.worker.threads</name>
+        <value>0</value>
+        <description>No compactor worker threads</description>
+    </property>
+    
+    <!-- Tez Configuration (if using Tez engine) -->
+    <property>
+        <name>hive.tez.container.size</name>
+        <value>512</value>
+        <description>Container size for Tez (MB)</description>
+    </property>
+    
+    <property>
+        <name>hive.tez.java.opts</name>
+        <value>-Xmx410m</value>
+        <description>Java options for Tez containers</description>
+    </property>
+    
+    <!-- Security Configuration (disabled for development) -->
+    <property>
+        <name>hive.metastore.sasl.enabled</name>
+        <value>false</value>
+        <description>Enable SASL for metastore</description>
+    </property>
+    
+    <property>
+        <name>hive.server2.enable.doAs</name>
+        <value>false</value>
+        <description>Enable doAs for HiveServer2</description>
+    </property>
+    
+    <!-- UI Configuration -->
+    <property>
+        <name>hive.server2.webui.use.ssl</name>
+        <value>false</value>
+        <description>Use SSL for HiveServer2 Web UI</description>
+    </property>
+    
+    <property>
+        <name>hive.server2.webui.max.threads</name>
+        <value>50</value>
+        <description>Maximum threads for HiveServer2 Web UI</description>
+    </property>
+</configuration>
+

@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<configuration>
+    <!-- MapReduce Framework Configuration -->
+    <property>
+        <name>mapreduce.framework.name</name>
+        <value>yarn</value>
+        <description>The runtime framework for executing MapReduce jobs</description>
+    </property>
+    
+    <!-- JobTracker/ResourceManager Configuration -->
+    <property>
+        <name>mapreduce.jobtracker.address</name>
+        <value>resourcemanager:8021</value>
+        <description>MapReduce JobTracker address (deprecated but kept for compatibility)</description>
+    </property>
+    
+    <!-- Application Master Configuration -->
+    <property>
+        <name>yarn.app.mapreduce.am.env</name>
+        <value>HADOOP_MAPRED_HOME=/opt/hadoop</value>
+        <description>Environment variables for the MR Application Master</description>
+    </property>
+    
+    <property>
+        <name>mapreduce.map.env</name>
+        <value>HADOOP_MAPRED_HOME=/opt/hadoop</value>
+        <description>Environment variables for map tasks</description>
+    </property>
+    
+    <property>
+        <name>mapreduce.reduce.env</name>
+        <value>HADOOP_MAPRED_HOME=/opt/hadoop</value>
+        <description>Environment variables for reduce tasks</description>
+    </property>
+    
+    <!-- Memory Configuration for Map Tasks -->
+    <property>
+        <name>mapreduce.map.memory.mb</name>
+        <value>512</value>
+        <description>Memory limit for map tasks</description>
+    </property>
+    
+    <property>
+        <name>mapreduce.map.java.opts</name>
+        <value>-Xmx410m</value>
+        <description>Java opts for map tasks</description>
+    </property>
+    
+    <!-- Memory Configuration for Reduce Tasks -->
+    <property>
+        <name>mapreduce.reduce.memory.mb</name>
+        <value>512</value>
+        <description>Memory limit for reduce tasks</description>
+    </property>
+    
+    <property>
+        <name>mapreduce.reduce.java.opts</name>
+        <value>-Xmx410m</value>
+        <description>Java opts for reduce tasks</description>
+    </property>
+    
+    <!-- Task Configuration -->
+    <property>
+        <name>mapreduce.task.io.sort.mb</name>
+        <value>128</value>
+        <description>Memory for map task sort buffer</description>
+    </property>
+    
+    <property>
+        <name>mapreduce.task.io.sort.factor</name>
+        <value>10</value>
+        <description>Number of streams to merge at once while sorting files</description>
+    </property>
+    
+    <!-- Job History Server Configuration -->
+    <property>
+        <name>mapreduce.jobhistory.address</name>
+        <value>historyserver:10020</value>
+        <description>MapReduce JobHistory Server IPC host:port</description>
+    </property>
+    
+    <property>
+        <name>mapreduce.jobhistory.webapp.address</name>
+        <value>historyserver:8188</value>
+        <description>MapReduce JobHistory Server Web UI host:port</description>
+    </property>
+    
+    <property>
+        <name>mapreduce.jobhistory.intermediate-done-dir</name>
+        <value>/user/history/done_intermediate</value>
+        <description>Directory where history files are written by MapReduce jobs</description>
+    </property>
+    
+    <property>
+        <name>mapreduce.jobhistory.done-dir</name>
+        <value>/user/history/done</value>
+        <description>Directory where history files are managed by the MR JobHistory Server</description>
+    </property>
+    
+    <!-- Shuffle Configuration -->
+    <property>
+        <name>mapreduce.reduce.shuffle.parallelcopies</name>
+        <value>5</value>
+        <description>Number of parallel transfers run by reduce during the copy phase</description>
+    </property>
+    
+    <property>
+        <name>mapreduce.reduce.shuffle.merge.percent</name>
+        <value>0.66</value>
+        <description>Threshold usage proportion for the shuffle memory space</description>
+    </property>
+    
+    <!-- Output Configuration -->
+    <property>
+        <name>mapreduce.output.fileoutputformat.compress</name>
+        <value>false</value>
+        <description>Should the job outputs be compressed?</description>
+    </property>
+    
+    <property>
+        <name>mapreduce.output.fileoutputformat.compress.type</name>
+        <value>RECORD</value>
+        <description>If the job outputs are compressed, how should they be compressed?</description>
+    </property>
+    
+    <!-- Security Configuration (disabled for development) -->
+    <property>
+        <name>mapreduce.cluster.delegation.token.max-lifetime</name>
+        <value>604800000</value>
+        <description>Maximum lifetime for delegation tokens in milliseconds</description>
+    </property>
+    
+    <!-- Performance Tuning -->
+    <property>
+        <name>mapreduce.job.ubertask.enable</name>
+        <value>true</value>
+        <description>Enable uber tasks for small jobs</description>
+    </property>
+    
+    <property>
+        <name>mapreduce.job.ubertask.maxmaps</name>
+        <value>9</value>
+        <description>Maximum number of maps for uber task</description>
+    </property>
+    
+    <property>
+        <name>mapreduce.job.ubertask.maxreduces</name>
+        <value>1</value>
+        <description>Maximum number of reduces for uber task</description>
+    </property>
+    
+    <property>
+        <name>mapreduce.job.ubertask.maxbytes</name>
+        <value>67108864</value>
+        <description>Maximum input size for uber task (64MB)</description>
+    </property>
+</configuration>

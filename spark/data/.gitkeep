@@ -1,0 +1,2 @@
+# This file ensures the directory structure is preserved in Git
+# Spark runtime data will be generated here during deployment

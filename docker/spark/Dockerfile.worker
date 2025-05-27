@@ -1,0 +1,48 @@
+FROM ubuntu:24.04
+
+# Install dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    openjdk-11-jdk \
+    curl \
+    net-tools \
+    netcat-openbsd \
+    gnupg \
+    procps \
+    python3 \
+    python3-pip \
+    wget \
+    && rm -rf /var/lib/apt/lists/*
+
+# Set environment variables
+ENV SPARK_HOME=/opt/spark
+ENV SPARK_VERSION=3.5.4
+ENV HADOOP_VERSION=3
+ENV HADOOP_HOME=/opt/hadoop
+ENV HADOOP_CONF_DIR=${HADOOP_HOME}/etc/hadoop
+ENV PATH=${PATH}:${SPARK_HOME}/bin:${HADOOP_HOME}/bin
+
+# Copy Spark distribution
+COPY packages/spark-3.5.4-bin-hadoop3.tgz /tmp/
+RUN tar -xzf /tmp/spark-3.5.4-bin-hadoop3.tgz -C /opt/ && \
+    ln -s /opt/spark-${SPARK_VERSION}-bin-hadoop${HADOOP_VERSION} ${SPARK_HOME} && \
+    rm /tmp/spark-3.5.4-bin-hadoop3.tgz
+
+# Copy Hadoop distribution for client libraries
+COPY packages/hadoop-3.4.1.tar.gz /tmp/
+RUN tar -xzf /tmp/hadoop-3.4.1.tar.gz -C /opt/ && \
+    ln -s /opt/hadoop-3.4.1 ${HADOOP_HOME} && \
+    rm /tmp/hadoop-3.4.1.tar.gz
+
+# Set up Spark configuration
+COPY docker/spark/config/spark-defaults.conf ${SPARK_HOME}/conf/
+COPY docker/spark/config/spark-env.sh ${SPARK_HOME}/conf/
+
+# Set up entrypoint script
+COPY docker/spark/scripts/entrypoint-spark-worker.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+# Expose ports
+EXPOSE 8081
+
+# Set entrypoint
+ENTRYPOINT ["/entrypoint.sh"]

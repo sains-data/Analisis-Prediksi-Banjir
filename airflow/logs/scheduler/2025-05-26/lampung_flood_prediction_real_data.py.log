@@ -1,0 +1,7 @@
+[2025-05-26T10:02:17.502+0000] {processor.py:186} INFO - Started process (PID=698) to work on /opt/airflow/dags/lampung_flood_prediction_real_data.py
+[2025-05-26T10:02:17.505+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/lampung_flood_prediction_real_data.py for tasks to queue
+[2025-05-26T10:02:17.513+0000] {logging_mixin.py:190} INFO - [2025-05-26T10:02:17.511+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/lampung_flood_prediction_real_data.py
+[2025-05-26T10:02:19.267+0000] {processor.py:925} INFO - DAG(s) 'lampung_flood_prediction_real_data' retrieved from /opt/airflow/dags/lampung_flood_prediction_real_data.py
+[2025-05-26T10:02:19.449+0000] {logging_mixin.py:190} INFO - [2025-05-26T10:02:19.448+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-26T10:02:19.662+0000] {logging_mixin.py:190} INFO - [2025-05-26T10:02:19.661+0000] {dag.py:4180} INFO - Setting next_dagrun for lampung_flood_prediction_real_data to 2025-05-26 09:00:00+00:00, run_after=2025-05-26 10:00:00+00:00
+[2025-05-26T10:02:19.752+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/lampung_flood_prediction_real_data.py took 2.270 seconds
