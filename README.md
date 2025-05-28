@@ -76,32 +76,57 @@ docker-compose down
 ```
 
 ---
+## 🏗️ Arsitektur Sistem
 
-## 🧱 System Architecture
+Diagram arsitektur berikut menjelaskan alur data dan komponen utama yang digunakan dalam sistem prediksi banjir berbasis Hadoop:
+
 ![Arsitektur Analisis-Prediksi-Banjir](docs/images_architecture.png)
 
-### Service Layer Distribution
+### 🔄 Alur Proses:
 
-| **Layer** | **Services** | **Technology** | **Ports** | **Purpose** |
-|-----------|-------------|----------------|-----------|-------------|
-| **Storage Layer** | NameNode, DataNode, HistoryServer | Hadoop 3.4.1 | 9870, 9864, 8188 | Distributed file system |
-| **Resource Management** | ResourceManager, NodeManager | YARN (Hadoop) | 8088, 8042 | Cluster resource allocation |
-| **Stream Processing** | Kafka, Zookeeper | Kafka 3.9.1, ZK 3.9 | 9092, 2181 | Real-time data streaming |
-| **Batch Processing** | Spark Master, Spark Worker | Spark 3.5.4 | 8080, 8081 | Large-scale data processing |
-| **SQL Interface** | Hive Server | Hive 4.0.1 | 10000, 10002 | Data warehouse queries |
-| **NoSQL Database** | HBase Master, RegionServer | HBase 2.6.1 | 16010, 16030 | Fast NoSQL data access |
-| **Analytics & BI** | Superset | Apache Superset | 8089 | Business intelligence dashboard |
-| **Development** | Jupyter Notebook | Jupyter Lab | 8888 | Interactive development |
-| **Orchestration** | Airflow | Apache Airflow 2.10.3 | 8085 | Workflow management |
+1. **Data Source (CSV/Excel Files)**
+   Data mentah seperti curah hujan, tinggi permukaan air, kelembaban tanah, dan data historis banjir dikumpulkan dalam format CSV/Excel.
 
-### Data Flow Architecture
+2. **Data Ingestion dengan Apache Flume / Sqoop**
 
-| Layer                | Description                         | Tools                         | Format             |
-| -------------------- | ----------------------------------- | ----------------------------- | ------------------ |
-| **Raw Data Layer**   | Stores raw data from all sources    | Kafka, HDFS, HBase            | CSV, JSON, GeoTIFF |
-| **Processing Layer** | ETL, transformation, model training | Spark, Spark Streaming, MLlib | Parquet, Avro      |
-| **Serving Layer**    | Ready-to-query structured data      | Hive, HBase                   | ORC, Parquet       |
-| **Analytics Layer**  | Visual dashboards and early alerts  | Superset, Jupyter             | -                  |
+   * **Flume**: Untuk mengalirkan data dari sumber tidak terstruktur (log atau file csv secara real-time).
+   * **Sqoop**: Untuk mengekstrak data terstruktur dari database relasional ke HDFS.
+
+3. **HDFS (Hadoop Distributed File System)**
+   Menyimpan data dalam format terdistribusi untuk pemrosesan paralel dan toleransi kesalahan.
+
+4. **Apache Hive & Apache Pig**
+
+   * **Hive** digunakan untuk kueri berbasis SQL terhadap data besar di HDFS.
+   * **Pig** digunakan untuk transformasi data kompleks secara skrip (Pig Latin).
+
+5. **Apache Spark**
+   Digunakan untuk pemrosesan data yang cepat dan analitik lanjutan, termasuk:
+
+   * Pembersihan data
+   * Feature engineering
+   * Pelatihan model Machine Learning
+
+6. **Model Prediksi (MLlib / scikit-learn)**
+
+   * Model prediktif dibangun untuk memprediksi kemungkinan banjir berdasarkan data historis dan cuaca saat ini.
+   * Model dapat dilatih menggunakan Spark MLlib atau di-*export* untuk digunakan dengan pustaka Python seperti scikit-learn.
+
+7. **Dashboard Visualisasi (Grafana / Tableau / Web App)**
+   Hasil prediksi dan analisis divisualisasikan dalam bentuk grafik interaktif atau dashboard real-time.
+
+---
+
+### ⚙️ Teknologi yang Digunakan
+
+| Komponen                 | Fungsi                                   |
+| ------------------------ | ---------------------------------------- |
+| **Hadoop HDFS**          | Penyimpanan data terdistribusi           |
+| **Apache Flume / Sqoop** | Akuisisi dan migrasi data                |
+| **Apache Hive / Pig**    | Query dan transformasi data              |
+| **Apache Spark**         | Pemrosesan data cepat & machine learning |
+| **MLlib / scikit-learn** | Pembangunan model prediktif              |
+| **Grafana / Tableau**    | Visualisasi hasil analitik               |
 
 ---
 
