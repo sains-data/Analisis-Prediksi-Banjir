@@ -78,8 +78,7 @@ docker-compose down
 ---
 
 ## 🧱 System Architecture
-
-We implement a **17-service distributed architecture** with hybrid processing capabilities:
+![Arsitektur Analisis-Prediksi-Banjir](docs/images_architecture.png)
 
 ### Service Layer Distribution
 
